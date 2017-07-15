@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.float_left, .float_right {
+	width:100%;
+	height:100px;
+	margin-bottom:10px;
+} /* 设置浮动元素外容器的宽度以及高度属性 */
+.float_left div, .float_right div {
+	width:80px;
+	height:80px;
+	padding:10px;
+	border:1px dashed #999999;
+} /* 设置页面中每个浮动元素宽度和高度，同时设置边框样式 */
+.float_left div {
+	float:left;
+	background-color:#F8F8F8;
+} /* 将左浮动区域中的所有元素左浮动，并设置背景颜色 */
+.float_right div {
+	float:right;
+	background-color:#DCDCDC;
+} /* 将右浮动区域中的所有元素右浮动，并设置背景颜色 */
+</style>
+<title>简单的左右浮动效果</title>
+</head>
+
+<body>
+<div class="float_left">
+	<div>float_left box_1</div>
+	<div>float_left box_2</div>
+	<div>float_left box_3</div>
+</div>
+<div class="float_right">
+	<div>float_right box_1</div>
+	<div>float_right box_2</div>
+	<div>float_right box_3</div>
+</div>
+</body>
+</html>

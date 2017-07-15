@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.ico_list h2 {
+	display:none; /* 列表标题不需要在页面中显示，隐藏 */
+}
+.ico_list li {
+	float:left;
+	width:100px;
+	height:20px; /* 设置li的宽高值，并使其浮动 */
+	overflow:hidden; /* 设置超过li的宽高值时，隐藏内容以及背景图片 */
+	list-style:none; /* 消除li的默认样式 */
+	text-indent:20px; /* 设置li中内容缩进20px */
+	background:url(images/yahoo.gif) no-repeat 0 0; /* 设置li的背景图片 */
+}
+.ico_list li.note {
+	background-position:-400px -520px;
+}
+.ico_list li.earth {
+	background-position:0 -200px;
+}
+.ico_list li.group {
+	background-position:-400px -200px;
+}
+</style>
+<title>CSS Sprite 技巧分解</title>
+</head>
+
+<body>
+<div class="ico_list">
+	<h2>ICO图标</h2>
+	<div class="content">
+		<ul>
+			<li class="note">笔记本</li>
+			<li class="earth">地球</li>
+			<li class="group">群组</li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.search_box {
+	position:relative;
+	width:360px;
+} /* 设置输入框的整体宽度，并设置为相对定位，成为其子级元素的定位参考 */
+.search_box * {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font:normal 12px/1.5em "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif;
+} /* 设置输入框内所有的内补丁、外补丁为0，列表修饰为无，并且设置字体样式等 */
+.search_box h3, .search_tips h4 {
+	display:none;
+} /* 隐藏标题文字 */
+.search_box select {
+	float:left;
+	width:60px;
+} /* 将下拉框设置浮动，并设置其宽度值 */
+.search_box input {
+	float:left;
+	width:196px;
+	height:14px;
+	padding:1px 2px;
+	margin:0 5px;
+	border:1px solid #619FCF;
+} /* 设置搜索输入框的样式，在设置其浮动的同时并将其与左右两边的元素添加间距（外补丁） */
+.search_box button {
+	float:left;
+	width:59px;
+	height:18px;
+	text-indent:-9999px;
+	border:0 none;
+	background:url(images/btn_search.gif) no-repeat 0 0;
+	cursor:pointer;
+} /* 设置按钮浮动，以缩进方式隐藏按钮上的文字并去除其边框添加背景图片 */
+.search_tips {
+	position:absolute;
+	top:17px;
+	left:65px;
+	width:190px;
+	padding:5px 5px 0;
+	border:1px solid #619FCF;
+} /* 将搜索提示框设置的宽度与输入框相等，并绝对定位在输入框底部 */
+.search_tips li {
+	float:left;
+	width:100%;
+	height:22px;
+	line-height:22px;
+} /* 设置搜索提示框内的列表高度和高度值，利用浮动避免IE浏览器中列表上下间距增多的BUG*/
+.search_tips li a {
+	float:left;
+	text-decoration:none;
+	color:#333333;
+} /* 搜索提示中相关文字居左显示，并设置相关样式 */
+.search_tips li a:hover {
+	color:#FF0000;
+} /* 搜索提示中相关文字在鼠标悬停时显示红色文字 */
+.search_tips li span {
+	float:right;
+	color:#CCCCCC;
+} /* 以灰色弱化搜索提示相关数据，并居右显示 */
+</style>
+<title>实例分解——搜索框的制作</title>
+</head>
+
+<body>
+<div class="search_box">
+	<h3>站内搜索</h3>
+	<div class="content">
+		<form method="post" action="">
+			<select>
+				<option value="">影视</option>
+				<option value="">日志</option>
+				<option value="">相册</option>
+			</select>
+			<input type="text" value="请输入关键字" /> <button type="submit">搜索</button>
+			<div class="search_tips">
+				<h4>搜索提示</h4>
+				<ul>
+					<li><a href="#">柯南538集</a><span>共有589个项目</span></li>
+					<li><a href="#">柯南剧场版</a><span>共有58393个项目</span></li>
+					<li><a href="#">柯南全集</a><span>共有158393个项目</span></li>
+					<li><a href="#">柯南剧场版</a><span>共有58393个项目</span></li>
+					<li><a href="#">柯南全集</a><span>共有158393个项目</span></li>
+				</ul>
+			</div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

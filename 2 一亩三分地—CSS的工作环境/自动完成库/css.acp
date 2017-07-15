@@ -1,0 +1,203 @@
+#TITLE=CSS auto
+; EditPlus Auto-completion file v1.0 written by linxz ( linxz@vip.qq.com http://www.linxz.cn ).
+; This file is provided as a default auto-completion file for css2
+
+
+#T=global
+* {margin:0;padding:0;}
+html {background:#FFFFFF;}
+body {font:normal 12px/1.6em  Arial, Verdana, Lucida, Helvetica, sans-serif;color:#333333;}
+table {border-collapse:collapse;border-spacing:0;empty-cells:show;text-align:left;}
+th,td {border-collapse:collapse;}
+ol,ul {list-style:none;}
+a {text-decoration:none;}
+a:hover {text-decoration:underline;}
+input,select,form img,button {vertical-align:middle;}
+img {border:0;}
+button {cursor:pointer;}
+
+#T=****************************************分割符***************************************************
+
+
+
+#T=f
+font:normal 12px/1.5em simsun, Verdana,Lucida, Arial, Helvetica, sans-serif;
+#T=fs
+font-size:^!px;
+#T=co
+color:#^!;
+#T=tac
+text-align:center;
+#T=tal
+text-align:left;
+#T=tar
+text-align:right;
+#T=fwb
+font-weight:bold;
+#T=fwn
+font-weight:normal;
+#T=fsn
+font-style:normal;
+#T=ti
+text-indent:^!px;
+#T=ti2
+text-indent:2em;
+#T=tdn
+text-decoration:none;
+#T=tdu
+text-decoration:underline;
+#T=lh
+line-height:^!px;
+#T=vm
+vertical-align:middle;
+#T=wsn
+white-space:nowrap;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=bc
+background-color:#^!;
+#T=bg
+background:url(../img/^!) no-repeat 0 0;
+#T=bgc
+background:#^! url(../img/) no-repeat 0 0;
+#T=bgn
+background:none;
+#T=bgp
+background-position:^!;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=bo
+border:1px solid #^!;
+#T=bot
+border-top:1px solid #^!;
+#T=bob
+border-bottom:1px solid #^!;
+#T=bor
+border-right:1px solid #^!;
+#T=bol
+border-left:1px solid #^!;
+#T=bow
+border-width:^!px;
+#T=boc
+border-color:#^!;
+#T=bn
+border:0 none;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=db
+display:block;
+#T=dn
+display:none;
+#T=di
+display:inline;
+#T=dib
+display:inline-block;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=fl
+float:left;
+#T=fr
+float:right;
+#T=fn
+float:none;
+#T=clb
+clear:both;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=w
+width:^!px;
+#T=h
+height:^!px;
+#T=pad
+padding:^!px;
+#T=padt
+padding-top:^!px;
+#T=padr
+padding-right:^!px;
+#T=padb
+padding-bottom:^!px;
+#T=padl
+padding-left:^!px;
+#T=m
+margin:^!px;
+#T=mt
+margin-top:^!px;
+#T=mr
+margin-right:^!px;
+#T=mb
+margin-bottom:^!px;
+#T=ml
+margin-left:^!px;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=oa
+overflow:auto;
+#T=oh
+overflow:hidden;
+#T=ov
+overflow:visible;
+#T=os
+overflow:scroll;
+#T=****************************************分割符***************************************************
+
+
+
+
+#T=pr
+position:relative;
+#T=pa
+position:absolute;
+#T=ps
+position:static;
+#T=l
+left:^!px;
+#T=r
+right:^!px;
+#T=t
+top:^!px;
+#T=b
+bottom:^!px;
+#T=patl
+position:absolute;top:^!px;left:px;
+#T=pat
+position:absolute;top:^!px;
+#T=z
+z-index:^!;
+#T=****************************************分割符***************************************************
+
+
+
+#T=im
+!important
+#T=cur
+cursor:pointer;
+#T=zm
+zoom:1;
+#T=zs
+/* ^! */
+#T=ohlfc
+overflow:hidden;line-height:2009px;font-size:0;content:"";
+#T=ohti
+overflow:hidden;text-indent:-9999px;
+#T=falpha
+filter:alpha(opacity=70);opacity:0.7;
+#T=fpng
+_background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/^!.png',sizingMethod='crop');

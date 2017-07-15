@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>怪异的导航</title>
+<style type="text/css">
+#nav * {
+	margin:0;
+	padding:0;
+	font:normal 12px/25px "宋体";
+} /* 设置#nav容器内所有元素的内外补丁为0，便于后期的细节调整 */
+#nav ul {
+	list-style:none;
+	height:25px;
+} /* 将列表修饰符取消，并设置其高度属性 */
+#nav li {
+	float:left; /* 将导航区域内所有列表li标签设置左浮动，横向排列 */
+	width:86px;
+	height:25px; /* 设置列表li标签的宽度和高度属性值 */
+	margin:0 -5px; /* 使用负边距使每个导航之间产生叠加效果 */
+	display:inline; /* 避免IE6中的双倍间距BUG */
+	text-align:center; /* 设置文字居中显示 */
+}
+#nav a {
+	position:relative; /* 改变其容器的宽度并设置为相对定位，使浮动元素获得层叠属性 */
+	float:left; /* 将导航区域内所有锚点a标签设置左浮动，横向排列 */
+	width:86px;
+	height:25px;/* 设置锚点a标签的宽度和高度属性值 */
+	color:#FFFFFF;
+	background:url(images/btn2.gif) center center no-repeat; /* 设置锚点a标签的文字颜色以及背景图片 */
+}
+#nav a:hover {
+	position:relative;
+	width:86px ;/* 当鼠标悬停锚点a标签时，改变其容器的宽度并设置为相对定位，使浮动元素获得层叠属性 */
+	z-index:2; /* 提升锚点a标签的层叠级别 */
+	color:#000000;
+	background:url(images/btn1.gif) 0 0 no-repeat; /* 当鼠标悬停锚点a标签时，改变文字的颜色以及背景图片 */
+}
+</style>
+</head>
+
+<body>
+<map id="nav">
+	<ul>
+		<li><a href="#">导航1</a></li>
+		<li><a href="#">导航2</a></li>
+		<li><a href="#">导航3</a></li>
+		<li><a href="#">导航4</a></li>
+		<li><a href="#">导航5</a></li>
+		<li><a href="#">导航6</a></li>
+		<li><a href="#">导航7</a></li>
+		<li><a href="#">导航8</a></li>
+	</ul>
+</map>
+</body>
+</html>

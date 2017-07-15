@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.music_sort {
+	width:200px;
+	border:1px solid #E8E8E8;
+}
+.music_sort * {
+	margin:0;
+	padding:0;
+	font:normal 12px/22px "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif;
+} /* 清除.music_sort容器中所有元素的默认内补丁和外补丁，并设置文字相关属性 */
+.music_sort h1 {
+	height:24px;
+	text-indent:10px; /* 标题文字缩进，增加空间感 */
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#999999;
+}
+.music_sort ol {
+	height:220px; /* 固定榜单列表的整体高度 */
+	padding-left:26px; /* 利用内补丁增加ol容器的空间显示背景图片 */
+	list-style:none; /* 去除默认的列表修饰符 */
+	background:url(images/number.gif) no-repeat 0 0;
+}
+.music_sort li {
+	width:100%;
+	height:22px;
+	list-style:none; /* 去除默认的列表修饰符 */
+}
+.music_sort li span {
+	color:#CCCCCC; /* 将列表中的歌手名字设置为灰色 */
+}
+</style>
+<title>榜上有名，音乐榜单</title>
+</head>
+
+<body>
+<div class="music_sort">
+	<h1>音乐排行榜</h1>
+	<div class="content">
+		<ol>
+			<li><strong>浪人情歌</strong> <span>伍佰</span></li>
+			<li><strong>K歌之王</strong> <span>陈奕迅</span></li>
+			<li><strong>心如刀割</strong> <span>张学友</span></li>
+			<li><strong>零（战神 主题曲）</strong> <span>柯有伦</span></li>
+			<li><strong>双子星</strong> <span>光良</span></li>
+			<li><strong>离歌</strong> <span>信乐团</span></li>
+			<li><strong>海阔天空</strong> <span>信乐团</span></li>
+			<li><strong>天高地厚</strong> <span>信乐团</span></li>
+			<li><strong>边走边爱</strong> <span>谢霆锋</span></li>
+			<li><strong>想到和做到的</strong> <span>马天宇</span></li>
+		</ol>
+	</div>
+</div>
+</body>
+</html>

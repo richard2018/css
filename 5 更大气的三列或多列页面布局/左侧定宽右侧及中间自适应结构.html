@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+.header, .footer {
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#AAAAAA;
+}
+.container {
+	text-align:center;
+	color:#FFFFFF;
+}
+.mainBox {
+	float:left;
+	width:100%;
+	background-color:#FFFFFF;
+} /* 设置主要内容区域的外层div标签浮动，并将宽度设置为100% */
+.mainBox .content {
+	margin:0 210px 0 41%;
+	background-color:#000000;
+} /* 设置主要内容区域的内层div标签外补丁保持宽度的默认值为auto，留出空白的位置给左右两列 */
+.subMainBox {
+	float:left;
+	width:40%;
+	margin-left:-100%;
+	background-color:#666666;
+} /* 将次要内容区域设置左浮动，并设置宽度为40%，负边距为左边的-100% */
+.sideBox {
+	float:left;
+	width:200px;
+	margin-left:-200px;
+	background-color:#666666;
+} /* 将侧边栏设置左浮动，并设置宽度为200px，负边距为左边的-200px */
+.footer {
+	clear:both;
+}
+</style>
+<title>左侧定宽右侧及中间自适应结构</title>
+</head>
+
+<body>
+<div class="header">头部信息</div>
+<div class="container">
+	<div class="mainBox">
+		<div class="content">主要内容区域</div>
+	</div>
+	<div class="subMainBox">次要内容区域</div>
+	<div class="sideBox">侧边栏</div>
+</div>
+<div class="footer">底部信息</div>
+</body>
+</html>

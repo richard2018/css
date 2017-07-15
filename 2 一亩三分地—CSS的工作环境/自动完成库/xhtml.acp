@@ -1,0 +1,292 @@
+#TITLE=xhtml
+; EditPlus Auto-completion file v1.0 written by linxz ( linxz@vip.qq.com http://www.linxz.cn ).
+; This file is provided as a default auto-completion file for xhtml
+
+#CASE=y
+
+#T=a
+<a href="#">^!</a>
+#T=at
+<a href="#" title="">^!</a>
+#T=att
+<a href="#" title="" target="_blank">^!</a>
+#T=acs
+<a href="#" class="^!"></a>
+#T=str
+<strong>^!</strong>
+#T=sts
+<strong class="^!"></strong>
+#T=em
+<em>^!</em>
+#T=ems
+<em class="^!"></em>
+#T=sp
+<span>^!</span>
+#T=sps
+<span class="^!"></span>
+#T=*************************************************以上是常用内联元素的********************************************
+
+
+
+#T=h1
+<h1>^!</h1>
+#T=h1a
+<h1><a href="#">^!</a></h1>
+#T=h2
+<h2>^!</h2>
+#T=h2s
+<h2><span>^!</span></h2>
+#T=h2se
+<h2><span>^!</span><em></em></h2>
+#T=h3
+<h3>^!</h3>
+#T=h3a
+<h3><a href="#">^!</a></h3>
+#T=h3s
+<h3><span>^!</span></h3>
+#T=h3se
+<h3><span>^!</span><em></em></h3>
+#T=h4
+<h4>^!</h4>
+#T=h4s
+<h4><span>^!</span></h4>
+#T=h4se
+<h4><span>^!</span><em></em></h4>
+#T=h5
+<h5>^!</h5>
+#T=h5s
+<h5><span>^!</span></h5>
+#T=h5se
+<h5><span>^!</span><em></em></h5>
+#T=h6
+<h6>^!</h6>
+#T=*****************************************标题块内容***********************************************
+
+
+
+#T=nb
+&nbsp;
+#T=id
+id="^!"
+#T=cs
+class="^!"
+#T=!-
+<!-- ^! -->
+#T=hr
+<hr />
+#T=br
+<br />
+#T=img
+<img src="^!" alt="" />
+#T=****************************************常用修饰性内容*********************************************
+
+
+
+
+#T=d
+<div>^!</div>
+#T=di
+<div id="^!"></div>
+#T=dc
+<div class="^!"></div>
+#T=dic
+<div id="^!" class=""></div>
+#T=p
+<p>^!</p>
+#T=pc
+<p class="^!"></p>
+#T=pre
+<pre>^!</pre>
+#T=ifm
+<iframe scrolling="no" src="^!" frameborder="0" height="340" width="100%"></iframe>
+#T=***************************************常用内容块**************************************************
+
+
+
+
+#T=ul
+<ul>
+	<li>^!</li>
+</ul>
+#T=ua
+<ul>
+	<li><a href="#">^!</a></li>
+</ul>
+#T=uia
+<ul id="^!">
+	<li><a href="#"></a></li>
+</ul>
+#T=uca
+<ul class="^!">
+	<li><a href="#"></a></li>
+</ul>
+#T=ol
+<ol>
+	<li>^!</li>
+</ol>
+#T=ola
+<ol>
+	<li><a href="#">^!</a></li>
+</ol>
+#T=olia
+<ol id="^!">
+	<li><a href="#"></a></li>
+</ol>
+#T=olsa
+<ol class="^!">
+	<li><a href="#"></a></li>
+</ol>
+#T=li
+<li>^!</li>
+#T=lia
+<li><a href="#">^!</a></li>
+#T=dl
+<dl>
+	<dt>^!</dt>
+	<dd></dd>
+</dl>
+#T=dli
+<dl id="^!">
+	<dt></dt>
+	<dd></dd>
+</dl>
+#T=dlc
+<dl class="^!">
+	<dt></dt>
+	<dd></dd>
+</dl>
+#T=dd
+<dd>^!</dd>
+#T=dt
+<dt>^!</dt>
+#T=********************************************列表块内容********************************************************
+
+
+
+
+#T=frm
+<form method="post" action="">
+	^!
+</form>
+#T=sel
+<select>
+	^!
+</select>
+#T=opt
+<option value="">^!</option>
+#T=slp
+<select>
+	<option value="" selected="selected">^!</option>
+</select>
+#T=lb
+<label>^!</label>
+#T=lbi
+<label for="^!"></label>
+#T=it
+<input type="text" value="^!" />
+#T=ir
+<input type="radio" name="^!" />
+#T=icb
+<input type="checkbox" name="^!" />
+#T=ips
+<input type="password" value="^!" />
+#T=hid
+<input type="hidden" value="^!" />
+#T=ta
+<textarea rows="4" cols="4">^!</textarea>
+#T=brs
+<button type="reset">^!</button>
+#T=bsm
+<button type="submit">^!</button>
+#T=but
+<button>^!</button>
+#T=btc
+<button class="^!" type=""></button>
+#T=******************************************表单性质内容**********************************************
+
+
+
+#T=tab
+<table>
+^!
+</table>
+#T=cap
+<caption>^!</caption>
+#T=the
+<thead>
+	^!
+</thead>
+#T=tf
+<tfoot>
+	^!
+</tfoot>
+#T=tb
+<tbody>
+	^!
+</tbody>
+#T=tr
+<tr>
+	^!
+</tr>
+#T=td
+<td>^!</td>
+#T=th
+<th>^!</th>
+#T=*********************************************表格性质内容**********************************************
+
+
+
+
+#T=sty
+<style type="text/css">
+^!
+</style>
+#T=scr
+<script type="text/javascript">
+<!--
+^!
+-->
+</script>
+#T=************************************************其他性质内容*********************************************
+
+
+
+#T=c-flash1
+<div class="flash-box">
+	<div class="big-pic"><a href="#"><img src="../img/^!" alt="" /></a></div>
+	<div class="flash-num"><a href="#" class="currA">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a></div>
+	<div class="flash-txt">
+
+	</div>
+	<div class="num-bg"></div>
+</div>
+#T=c-flash2
+<div class="flash-box">
+	<div class="big-pic"><a href="#"><img src="../img/^!" alt="" /></a></div>
+	<div class="pic-list">
+		<ul>
+			<li><a href="#" class="currA"><img src="../img/ " alt="" /></a><li>
+			<li><a href="#"><img src="../img/ " alt="" /></a><li>
+			<li><a href="#"><img src="../img/ " alt="" /></a><li>
+			<li><a href="#"><img src="../img/ " alt="" /></a><li>
+			<li><a href="#"><img src="../img/ " alt="" /></a><li>
+		</ul>
+	</div>
+	<div class="flash-txt">
+
+	</div>
+</div>
+#T=c-li-mov
+<div class="movList">
+	<ul>
+		<li>
+			<a href="#"><img src="img/^!" alt="" /></a>
+			<h4><a href="#"></a></h4>
+			<a href="#" class="down">下载本片</a>
+			<p class="info">高清版</p>
+			<span class="tip">大片</span>
+			<div class="bg"></div>
+		</li>
+	</ul>
+</div>
+#T=************************************************常用代码片段*********************************************

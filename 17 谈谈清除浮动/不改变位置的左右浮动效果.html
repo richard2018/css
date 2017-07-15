@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.float_left {
+	float:left; /* 将元素左浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	background-color:#DCDCDC;
+}
+.float_right {
+	float:right; /* 将元素右浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	color:#FFFFFF;
+	background-color:#333333;
+}
+.float_box {
+	width:500px;
+} /* 固定容器浮动容器父级的宽度，使其子级在浮动时不改变浮动的位置 */
+</style>
+<title>不改变位置的左右浮动效果</title>
+</head>
+
+<body>
+<div class="float_box">
+	<div class="float_left">左浮动元素</div>
+	<div class="float_right">右浮动元素</div>
+</div>
+</body>
+</html>

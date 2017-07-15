@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+} /* 清除页面中所有元素的内外补丁 */
+.news-box {
+	width:580px;
+	padding:10px;
+	font:normal 14px/1.5em simsun, Verdana,Lucida, Arial, Helvetica, sans-serif; /* simsun 字体就是宋体的英文写法 */
+	color:#000000;
+	border:1px solid #333333;
+	background-color:#F6FAFD;
+} /* 设置新闻内容区域的宽度，并设置文字大小、颜色等样式 */
+.news-box h2 {
+	display:none;
+} /* 隐藏新闻内容区域中不需要的标题 */
+.news-box h1 {
+	height:20px;
+	padding:5px 0;
+	line-height:26px;
+	overflow:hidden; /* 行高比高度的属性值要大，设置overflow:hidden;使超过的部分隐藏 */
+	font-size:20px;
+} /* 设置新闻标题的样式高度为30px，宽度为默认值auto，并添加行高以及设置文字大小 */
+.news-box .info {
+	height:20px;
+	margin-bottom:15px;
+	font-size:12px;
+} /* 设置新闻相关信息的样式，添加外补丁，使其与内容信息产生间距 */
+.news-box .summary {
+	padding:5px;
+	margin-bottom:10px;
+	text-indent:2em; /* 首行缩进2个汉字的宽度 */
+	border:1px solid #DCDDDD;
+	background-color:#FFFFFF;
+} /* 设置新闻摘要内容区域的样式 */
+.news-box .content p {
+	margin-bottom:10px;
+	line-height:22px;
+	text-indent:2em;
+} /* 新闻内容区域的每个段落加大行间距（行高），并首行缩进，段落与段落之间存在一点间距 */
+.news-box .comments {
+	height:30px;
+	padding:0 5px;
+	line-height:30px; /* 行高的属性值与高度的属性值相同，可将单行文字以垂直居中显示 */
+	border-top:1px dashed #AFAFB0;
+	border-bottom:1px dashed #AFAFB0;
+	background-color:#FFFFFF;
+} /* 设置讨论区域的上下边框样式为虚线的灰色，背景色为白色 */
+a {
+	color:#1E50A2;
+} /* 设置页面中所有a链接的颜色 */
+a:hover {
+	color:#BA2636;
+	text-decoration:none;
+} /* 设置页面中所有a链接被触发时的颜色以及下划线消失 */
+a.comments_num {
+	color:#BA2636;
+} /* 设置新闻相关信息处的跟帖信息链接的文字颜色 */
+.comments a em {
+	font-style:normal;
+} /* 设置新闻评论处的评论数据文字样式非倾斜 */
+</style>
+<title>实例分解——新闻内容页</title>
+</head>
+
+<body>
+<div class="news-box">
+	<!-- 新闻标题 S -->
+	<h1>浙江温州将公务员酒后驾车列入年度考核</h1>
+	<!-- 新闻标题 E -->
+	<!-- 新闻相关信息 S -->
+	<div class="info">
+		<span class="date">2009-05-23 19:05:37</span> <span class="from">来源:<a href="#">新华网</a></span> <a href="#" class="comments_num">跟贴 23 条</a> <a href="#">手机看新闻</a>
+	</div>
+	<!-- 新闻相关信息 E -->
+	<!-- 新闻摘要 S -->
+	<div class="summary">
+		<h2>新闻摘要：</h2>
+		<p>核心提示：浙江温州日前规定，公务员酒后驾车等交通安全违法行为将列入年度考核。纪委给予交通违法人相应处分、诫勉谈话或通报批评。</p>
+	</div>
+	<!-- 新闻摘要 E -->
+	<!-- 新闻内容 S -->
+	<div class="content">
+		<h2>新闻内容：</h2>
+		<img src="images/new_pic.jpg" alt="新闻图片" class="news_pic" />
+		<p><strong>新华网5月23日电</strong> 浙江省温州市纪委、组织部、公安局、监察局日前联合作出规定：机关、事业单位工作人员严重道路交通安全违法行为，向当事人所在单位抄告，并列入干部年度考核的依据之一。</p>
+		<p>温州市纪委认定的严重道路交通安全违法行为主要有：无驾驶证驾驶机动车辆，发生道路交通事故后逃逸、故意破坏现场或者冒名顶替，饮酒后或醉酒驾驶机动车辆，因抗拒或阻碍道路交通管理而受到行政处罚，因交通安全违法行为受到行政拘留处罚。</p>
+		<p>省略部分内容，信息来源于网络！<span class="editor">(本文来源：<a href="#">新华网</a> 作者：张和平)</span></p>
+	</div>
+	<!-- 新闻内容 E -->
+	<!-- 新闻评论 S -->
+	<div class="comments"><a href="#">【已有<em>23</em>位网友发表了看法，点击查看。】</a></div>
+	<!-- 新闻评论 E -->
+</div>
+</body>
+</html>

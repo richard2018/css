@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+p {
+	width:200px;
+	height:25px;
+	overflow:hidden;
+	background-color:#EEEEEE;
+} /* 设置段落p标签的宽高，并设置超出部分隐藏 */
+p.ti-2em {
+	text-indent:2em; /* 缩进2倍的宽度 */
+}
+p.ti-none {
+	text-indent:-9999px;
+} /* 设置缩进为-9999px，负值，并且数值很大，导致最终的不可见 */
+</style>
+<title>text-indent的扩展运用</title>
+</head>
+
+<body>
+<p>我要后面的文字消失</p>
+<p class="ti-2em">我要后面的文字消失</p>
+<p class="ti-none">我要后面的文字消失</p>
+</body>
+</html>

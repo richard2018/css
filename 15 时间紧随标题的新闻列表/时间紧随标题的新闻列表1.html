@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.news_list * {
+	margin:0;
+	padding:0;
+	list-style:none;
+	font:normal 12px/22px "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif;
+} /* 将.news_list容器内的所元素内补丁和外补丁设置为0，去除列表修饰符，并且设置相应的文字样式 */
+.news_list {
+	width:300px;
+} /* 定义新闻列表整体的宽度 */
+.news_list h3 {
+	height:24px;
+	font-size:14px;
+	font-weight:bold;
+	color:#E8E8E8;
+	background-color:#666666;
+} /* 定义新闻列表的标题高度以及文字样式 */
+.news_list li {
+	float:left; /* 避免IE浏览器中列表li之间的高度增加BUG */
+	width:300px;
+	height:22px;
+	overflow:hidden;
+} /* 定义新闻列表li标签的宽度和高度，并将溢出的内容隐藏 */
+.news_list li a {
+	float:left; /* 设置锚点a标签浮动 */
+	padding-right:70px; /* 增加锚点a标签右内补丁70px，增加空间给时间的显示 */
+}
+.news_list li a:hover {
+	text-decoration:none;
+	color:#F32600;
+} /* 定义文字链接在鼠标悬停时的效果 */
+.news_list li span {
+	float:left; /* 设置新闻发布时间浮动，与新闻标题并列显示 */
+	margin-left:-65px; /* 利用负边距原理使新闻发布时间紧挨新闻标题 */
+	color:#999999; /* 定义新闻发布时间为灰色，弱化发布的时间在视觉上的感觉 */
+}
+</style>
+<title>时间紧随标题的新闻列表</title>
+</head>
+
+<body>
+<div class="news_list">
+	<h3>影视新闻</h3>
+	<div class="content">
+		<ul>
+			<li><a href="1">两位大师相继去世北大悲恸两位大师相继去世北大悲恸两位大师相继去世北大悲恸</a> <span>2009-7-12</span></li>
+			<li><a href="1">小男孩长相酷</a> <span>2009-7-12</span></li>
+			<li><a href="1">林志玲逃税被逼补缴引热议</a> <span>2009-7-12</span></li>
+			<li><a href="1">婴儿在母腹中比出V字手势出V字手势</a> <span>2009-7-12</span></li>
+			<li><a href="1">台湾偶像剧集《终极三国》</a> <span>2009-7-12</span></li>
+		</ul>
+	</div>
+</div>
+</body>
+</html>

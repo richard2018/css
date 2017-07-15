@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+.header, .footer {
+	width:960px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#AAAAAA;
+}
+.container {
+	float:left;
+	width:960px;
+	text-align:center;
+	overflow:hidden; /* 截区超过.container标签之外的多余部分 */
+	color:#FFFFFF;
+}
+.mainBox {
+	float:left;
+	width:960px;
+	margin-bottom:-9999px; /* 负边距实现等高效果必须条件一 */
+	padding-bottom:9999px; /* 负边距实现等高效果必须条件二 */
+} /* 设置主要内容区域的外层div标签浮动，并将宽度设置为960px */
+.mainBox .content {
+	width:440px;
+	margin:0 210px 0 310px;
+	background-color:#000000;
+} /* 设置主要内容区域的内层div标签外补丁并设置宽度为440px，留出空白的位置给左右两列 */
+.subMainBox {
+	float:left;
+	width:300px;
+	margin-left:-960px;
+	margin-bottom:-9999px; /* 负边距实现等高效果必须条件一 */
+	padding-bottom:9999px; /* 负边距实现等高效果必须条件二 */
+	background-color:#666666;
+} /* 将次要内容区域设置左浮动，并设置宽度为300px，负边距为左边的-960px */
+.sideBox {
+	float:left;
+	width:200px;
+	margin-left:-200px;
+	margin-bottom:-9999px; /* 负边距实现等高效果必须条件一 */
+	padding-bottom:9999px; /* 负边距实现等高效果必须条件二 */
+	background-color:#666666;
+} /* 将侧边栏设置左浮动，并设置宽度为200px，负边距为左边的-200px */
+.footer {
+	clear:both;
+}
+</style>
+<title>三列等高（负边距实现）</title>
+</head>
+
+<body>
+<div class="header">头部信息</div>
+<div class="container">
+	<div class="mainBox">
+		<div class="content">
+			<p>主要内容区域</p>
+			<p>多一点文字信息</p>
+			<p>更能看得清楚到底是是不是等高</p>
+			<p>吃饱了才会撑开</p>
+			<p>差不多饱了</p>
+			<p>不用太饱~</p>
+		</div>
+	</div>
+	<div class="subMainBox">次要内容区域</div>
+	<div class="sideBox">侧边栏</div>
+</div>
+<div class="footer">底部信息</div>
+</body>
+</html>

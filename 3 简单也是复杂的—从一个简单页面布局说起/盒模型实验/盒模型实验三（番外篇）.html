@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+div {
+	width:200px; /* 定义div标签的宽度为200px */
+	height:30px; /* 定义div标签的高度为200px */
+	padding:20px; /* 定义div标签内补丁为0 */
+	border:5px solid #FF0000; /* 定义div标签边框为粗细5px、边框色为红色的实线边框*/
+	border-bottom-width:0; /* 定义div标签底边框的粗细为0 */
+	margin:0; /* 定义div标签外补丁为0 */
+	color:#FFFFFF;
+	background-color:#000000; /* 定义div标签的背景色为黑色 */
+}
+div + div {
+	border-width:10px 5px; /* 通过相邻选择符定义第二个以及第三个div标签的上下边框粗细为10px，左右边框粗细为5px */
+}
+div + div + div {
+	border-width:0 5px 5px; /* 通过相邻选择符定义第三个div标签的上边框粗细为0，左右以及下边框的粗细为5px */
+}
+</style>
+<title>盒模型实验三（番外篇）</title>
+</head>
+
+<body>
+<div>我是第一个div标签哦</div>
+<div>那我就是第二个div标签啦</div>
+<div>显然，我就是第三个div标签</div>
+</body>
+</html>

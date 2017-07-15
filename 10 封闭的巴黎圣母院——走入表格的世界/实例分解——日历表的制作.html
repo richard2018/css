@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>实例分解——日历表的制作</title>
+<style type="text/css">
+table {
+	width:175px;
+	border-collapse:collapse; /* 合并单元格之间的边 */
+	border:1px solid #DCDCDC;
+	font:normal 12px/1.5em Arial, Verdana, Lucida, Helvetica, sans-serif;
+} /* 定义表格整体的宽度以及文字样式 */
+caption {
+	height:24px;
+	text-align:left;
+	color:#F32600;
+} /* 定义表头的样式，文字居左等 */
+td, th {
+	width:25px;
+	height:20px;
+	text-align:center;
+	border:1px solid #DCDCDC;
+} /* 将单元格内容和单元格标题的共同点归为一组样式定义 */
+th {
+	color:#000000;
+	background-color:#EEEEEE;
+} /* 针对单元格标题定义样式，使其与单元格内容产生区别 */
+td.current {
+	font-weight:bold;
+	color:#FFFFFF;
+	background-color:#999999;
+} /* 定义当前日期的单元格内容样式 */
+td.last_month, td.next_month {
+	color:#DFDFDF;
+} /* 定义上个月以及下个月在当前月中的文字颜色 */
+tr>td, tr>td+td+td+td+td+td+td {
+	color:#B3222B;
+	background-color:#F8F8F8;
+} /* 定义第一列以及最后一列的单元格内容（即双休日）的样式 */
+tr>td+td {
+	color:#333333;
+	background-color:#FFFFFF;
+} /* 定义中间五列单元格内容的样式 */
+col.day_off {
+	color:#B3222B;
+	background-color:#F8F8F8;
+} /* 针对IE浏览器定义双休日的单元格样式 */
+</style>
+</head>
+
+<body>
+<table>
+	<caption>今天是2009年7月1日</caption>
+	<colgroup span="7">
+		<col span="1" class="day_off" />
+		<col span="5" />
+		<col span="1" class="day_off" />
+	</colgroup>
+	<thead>
+		<tr>
+			<th>日</th>
+			<th>一</th>
+			<th>二</th>
+			<th>三</th>
+			<th>四</th>
+			<th>五</th>
+			<th>六</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td class="last_month">28</td>
+			<td class="last_month">29</td>
+			<td class="last_month">30</td>
+			<td class="current">1</td>
+			<td>2</td>
+			<td>3</td>
+			<td>4</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9</td>
+			<td>10</td>
+			<td>11</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+			<td>17</td>
+			<td>18</td>
+		</tr>
+		<tr>
+			<td>19</td>
+			<td>20</td>
+			<td>21</td>
+			<td>22</td>
+			<td>23</td>
+			<td>24</td>
+			<td>25</td>
+		</tr>
+		<tr>
+			<td>26</td>
+			<td>27</td>
+			<td>28</td>
+			<td>29</td>
+			<td>30</td>
+			<td>31</td>
+			<td class="next_month">1</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

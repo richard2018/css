@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+} /* 设置页面中所有元素的内外补丁为0，便于更便捷的页面布局 */
+#header, #footer {
+	width:960px;
+	height:30px;
+	background-color:#E8E8E8;
+} /* 设置头部信息以及底部信息的宽度为960px，高度为30px，并添加浅灰色背景色 */
+#container {
+	width:960px;
+	overflow:hidden;
+} /* 设置页面内容区域的宽度为960px */
+.mainBox {
+	float:left; /* 将主要内容区域向左浮动 */
+	width:650px;
+	background-color:#333333;
+	background-image:url(images/200605282059328431.gif);
+	background-repeat:no-repeat;
+	background-position:left bottom; /* 读者请修改这个位置的代码为 background-position:0 0; 后再浏览页面 */
+}
+.sideBox {
+	float:right; /* 将侧边栏向右浮动 */
+	width:280px;
+	background-color:#AAAAAA;
+}
+.mainBox, .sideBox {
+	padding:0 5px;
+	color:#FF0000;
+	margin-bottom:-9999px;
+	padding-bottom:9999px;
+}
+#container:after {
+	display:block;
+	visibility:hidden;
+	font-size:0;
+	line-height:0;
+	clear:both;
+	content:"";
+} /* 清除内容区域的左右浮动 */
+</style>
+<title>两列等高（负边距实现）</title>
+</head>
+
+<body>
+<div id="header">头部信息</div>
+<div id="container">
+	<div class="mainBox">
+		<p>主要内容区域</p>
+		<p>增加文字看看效果</p>
+		<p>两列等高的页面结构布局方式</p>
+		<p>可以算是一种“障眼法”</p>
+		<p>让浏览者在视觉上感觉到页面中的两列是相同高度的即可</p>
+		<p style="height:300px;">请读者查看源代码并修改.mainBox中的样式，根据注释中的提示修改</p>
+	</div>
+	<div class="sideBox">侧边栏</div>
+</div>
+<div id="footer">底部信息</div>
+</body>
+</html>

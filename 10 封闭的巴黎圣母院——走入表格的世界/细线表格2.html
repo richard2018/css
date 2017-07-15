@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+table {
+	width:300px;
+	border-collapse:collapse; /* 合并单元格之间的边 */
+	border:1px solid #000000;
+	font:normal 12px/1.5em "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif;
+} /* 定义表格的整体宽度以及边框样式，并且定义表格内所有文字的样式 */
+caption {
+	text-align:left;
+} /* 将默认居中显示的表头信息居左显示 */
+th {
+	color:#F4F4F4;
+	border:1px solid #000000; /* 为单元格标题添加1px的黑色边框线 */
+	background-color:#999999;
+} /* 定义单元格中，表格标题的文字样式以及背景颜色 */
+td {
+	text-align:center;
+	border:1px solid #000000; /* 为单元格内容添加1px的黑色边框线 */
+	background-color:#E8E8E8;
+} /* 定义所有td内容单元格的文字居中显示，并添加背景颜色 */
+tfoot td {
+	text-align:right;
+	background-color:#FFFFFF;
+} /* 将表格底部的td内容单元格文字居右显示，并设置背景颜色 */
+</style>
+<title>细线表格</title>
+</head>
+
+<body>
+<table>
+	<caption>表头信息</caption>
+	<thead>
+		<tr>
+			<th>表格标题</th>
+			<th>表格标题</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td colspan="2">显示表格底部的统计行</td>
+		</tr>
+	</tfoot>
+	<tbody>
+		<tr>
+			<td>表格内容单元格A</td>
+			<td>表格内容单元格B</td>
+		</tr>
+		<tr>
+			<td>表格内容单元格C</td>
+			<td>表格内容单元格D</td>
+		</tr>
+		<tr>
+			<td>表格内容单元格E</td>
+			<td>表格内容单元格F</td>
+		</tr>
+	</tbody>
+</table>
+</body>
+</html>

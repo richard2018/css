@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.float_left {
+	float:left; /* 将元素左浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	border:2px solid #FF0000;
+}
+.float_right {
+	float:right; /* 将元素右浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	border:2px solid #0000FF;
+}
+.float_box {
+	position:relative;
+	overflow:hidden; /* 清除元素自身的因为浮动导致的浏览器解析问题 */
+	background-color:#AAAAAA;
+	zoom:1;
+} /* 包含浮动元素的容器 */
+.float_box a {
+	position:absolute;
+	top:-5px;
+	left:100px;
+}
+.no_float {
+	color:#FFFFFF;
+	background-color:#000000;
+} /* 因浮动元素而印象到的内容 */
+</style>
+<title>hidden属性值导致的问题</title>
+</head>
+
+<body>
+<div class="float_box">
+	<div class="float_left">左浮动元素</div>
+	<div class="float_right">右浮动元素</div>
+	<a href="#">被隐藏了部分的文字</a>
+</div>
+<div class="no_float">测试因为浮动导致该容器所处的位置</div>
+</body>
+</html>

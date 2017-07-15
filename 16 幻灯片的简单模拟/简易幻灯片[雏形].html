@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+	font:normal 12px/1.5em Verdana,Lucida, Arial, Helvetica, "宋体",sans-serif;
+} /* 将页面内所有元素的内补丁和外补丁设置为0，便于后期调整，同时将所有文字样式统一 */
+.wrapper {
+	width:200px;
+	height:200px;
+	border:1px solid #333333;
+	background:#CCCCCC;
+} /* 定义幻灯片容器的宽度以及高度，并设置边框样式和背景颜色 */
+.content {
+	width:180px;
+	height:160px;
+	margin:10px auto 0; /* 将幻灯片内容区域居中显示 */
+	overflow:hidden;
+	border:1px solid #999999;
+	background:#FFFFFF;
+} /* 固定幻灯片内容显示范围，溢出的内容将被隐藏，同时为了视觉差异，设置边框样式和背景颜色 */
+.box {
+	float:left;
+	width:160px;
+	height:150px; /* 定义每个幻灯片的高度和宽度，并设置浮动使其能紧密相邻 */
+	margin-bottom:10px;
+	padding:10px; /* 调整幻灯片内容区域与外容器的间距 */
+	overflow:auto; /* 当幻灯片内容区域中的内容溢出固定范围时，出现滚动条 */
+}
+.pager {
+	width:180px;
+	height:20px; /* 定义幻灯片序列的整体宽度和高度 */
+	margin:5px auto; /* 将幻灯片序列居中显示 */
+	text-align:right; /* 设置幻灯片序列内容居右对齐 */
+}
+.pager a {
+	padding:2px 4px; /* 保持锚点a标签的内联特性，使用内补丁增加其宽度和高度 */
+	text-decoration:none; /* 去除锚点a标签中的下划线 */
+	color:#FFFFFF;
+	background:#FF0000; /* 定义锚点a标签的文字颜色和背景颜色 */
+}
+.pager a:hover {
+	color:#000000;
+	background:#FFFFFF;
+} /* 当鼠标悬停锚点a标签时，文字颜色和背景颜色的变化效果 */
+</style>
+<title>幻灯片的简单模拟</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<div class="content">
+		<div class="box">
+			<h2>幻灯片的简单模拟</h2>
+			<p>第一屏</p>
+		</div>
+		<div class="box">
+			<p>第二屏</p>
+		</div>
+		<div class="box">
+			<p>第三屏</p>
+		</div>
+		<div class="box">
+			<p>第四屏</p>
+		</div>
+		<div class="box">
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+			<p>第五屏</p>
+		</div>
+	</div>
+	<div class="pager">
+		<a href="#">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a>
+	</div>
+</div>
+</body>
+</html>

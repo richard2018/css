@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.user_login {
+	width:210px;
+	padding:1px;
+	border:1px solid #DBDBD0;
+	background-color:#FFFFFF;
+} /* 设置登录框样式，增加1px的内补丁，提升整体表现效果 */
+.user_login * {
+	margin:0;
+	padding:0;
+	font:normal 12px/1.5em "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif;
+} /* 设置登录框中全局样式，调整内补丁、外补丁、文字等基本样式 */
+.user_login h3 {
+	height:24px;
+	line-height:24px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#EEEEE8;
+} /* 设置登录框中标题的样式 */
+.user_login .content {
+	padding:5px;
+} /* 设置登录框内容部分的内补丁，使其与边框产生一定的间距 */
+.user_login .frm_cont {
+	margin-bottom:5px;
+} /* 将表单元素的容器向底下产生5px的间距 */
+.user_login .frm_cont label {
+	cursor:pointer;
+} /* 设置鼠标经过所有的label标签的，鼠标为手型 */
+.user_login .userName input, .user_login .userPsw input, .user_login .validate input {
+	width:146px;
+	height:17px;
+	padding:3px 2px 0;
+	border:1px solid #A9A98D;
+} /* 将所有输入框设置宽度以及边框样式 */
+.user_login .validate input {
+	width:36px;
+	text-align:center;
+	margin-right:5px;
+} /* 设置验证码输入框的宽度以及与验证图之间的间距 */
+.user_login .keepLogin {
+	padding-left:48px;
+} /* 将记住密码区域左缩进48px，与输入框对齐 */
+.user_login .keepLogin input {
+	margin-right:5px;
+	vertical-align:-1px;
+	*vertical-align:0; /* 针对IE浏览器的HACK */
+} /* 调整多选框与文字之间的间距，以及底边与文字对齐 */
+.user_login .btns {
+	text-align:center;
+} /* 按钮区域的容器居中显示 */
+.user_login .btns a {
+	padding:3px 4px 2px;
+	text-decoration:none;
+	color:#000000;
+} /* 设置文字基本样式以及增加相应的内补丁显示背景图片 */
+.user_login .btns button {
+	height:21px;
+	*vertical-align:-3px; /* 针对IE浏览器的HACK */
+	cursor:pointer;
+} /* 设置按钮区域中的按钮高度以及针对IE浏览器调整按钮与文字的对齐方式 */
+.user_login .btns button, .user_login .btns a {
+	border:1px solid #A9A98D;
+	background:url(images/bg_btn.gif) repeat-x 0 0;
+} /* 将按钮区域中的文字和按钮设置边框线以及背景图片 */
+</style>
+<title>实例分解——登录框的制作</title>
+</head>
+
+<body>
+<div class="user_login">
+	<h3>用户登录</h3>
+	<div class="content">
+		<form method="post" action="">
+			<div class="frm_cont userName"><label for="userName">用户名：</label><input type="text" id="userName" /></div>
+			<div class="frm_cont userPsw"><label for="userPsw">密　码：</label><input type="password" id="userPsw" /></div>
+			<div class="frm_cont validate"><label for="validate">验证码：</label><input type="text" id="validate" /><img src="images/getcode.jpg" alt="验证码：3731" /></div>
+			<div class="frm_cont keepLogin"><input type="checkbox" id="keepLogin" /><label for="keepLogin">记住我的登录信息</label></div>
+			<div class="btns"><button type="submit" class="btn_login">登陆</button> <a href="#" class="reg">用户注册</a></div>
+		</form>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+.float_left {
+	float:left; /* 将元素左浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	border:2px solid #FF0000;
+}
+.float_right {
+	float:right; /* 将元素右浮动 */
+	width:200px;
+	height:100px; /* 设置该元素的宽度和高度属性 */
+	border:2px solid #0000FF;
+}
+.float_box {
+	background-color:#AAAAAA;
+} /* 包含浮动元素的容器 */
+.no_float {
+	color:#FFFFFF;
+	background-color:#000000;
+} /* 因浮动元素而印象到的内容 */
+</style>
+<title>浮动产生的BUG</title>
+</head>
+
+<body>
+<div class="float_box">
+	<div class="float_left">左浮动元素</div>
+	<div class="float_right">右浮动元素</div>
+</div>
+<div class="no_float">测试因为浮动导致该容器所处的位置</div>
+</body>
+</html>

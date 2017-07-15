@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+#nav * {
+	margin:0;
+	padding:0;
+} /* 设置#nav容器内所有元素的内外补丁为0，便于后期的细节调整 */
+#nav div {
+	position:relative; /* 设置相对相对，便于其子级元素有定位参照对象 */
+	width:754px;
+	height:31px; /* 设置导航区域的宽度和高度属性值 */
+	overflow:hidden; /* 设置导航区域内的内容超过固定的区域时为隐藏 */
+	padding-left:21px; /* 导航的整体宽度是775px，为了便于背景图片更好的显示，增加左内补丁21px */
+	background:url(images/bg_nav2.png) no-repeat 0 0; /* 设置导航的背景图片 */
+}
+#nav div a {
+	position:absolute;
+	top:0; /* 将所有锚点a标签决定定位，顶部为0 */
+	width:92px;
+	height:31px; /* 设置锚点a标签的宽度和高度属性值 */
+	overflow:hidden;
+	text-indent:-9999px; /* 利用文本缩进属性将锚点a标签的内容全部隐藏 */
+	background:url(images/bg_nav2.png) no-repeat 1000px 1000px; /* 设置锚点a标签的背景图片，并将背景图片定位一个很大的数值，显示无背景图 */
+}
+#nav div a:hover {
+	width:120px;
+} /* 当鼠标悬停锚点a标签时，改变其容器的宽度并设置为相对定位，使浮动元素获得层叠属性 */
+#nav div a.index {
+	left:21px; /* 定义内容为“首页”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.index:hover {
+	margin-left:-10px;
+	background-position:-11px -31px;
+} /* 当内容为“首页”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.intro {
+	left:113px; /* 定义内容为“公司简介”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.intro:hover {
+	margin-left:-10px;
+	background-position:-103px -62px;
+} /* 当内容为“公司简介”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.honor {
+	left:205px; /* 定义内容为“企业荣誉”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.honor:hover {
+	margin-left:-11px;
+	background-position:-194px -31px;
+} /* 当内容为“企业荣誉”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.flow {
+	left:297px; /* 定义内容为“工艺流程”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.flow:hover {
+	margin-left:-12px;
+	background-position:-285px -62px;
+} /* 当内容为“工艺流程”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.product {
+	left:389px; /* 定义内容为“产品展示”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.product:hover {
+	margin-left:-15px;
+	background-position:-374px -31px;
+} /* 当内容为“产品展示”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.sale {
+	left:481px; /* 定义内容为“销售网络”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.sale:hover {
+	margin-left:-14px;
+	background-position:-467px -62px;
+} /* 当内容为“销售网络”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.buy {
+	left:573px; /* 定义内容为“网上订购”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.buy:hover {
+	margin-left:-15px;
+	background-position:-558px -31px;
+} /* 当内容为“网上订购”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+#nav div a.contact {
+	left:665px; /* 定义内容为“联系我们”的锚点a标签在绝对定位时居左的位置 */
+}
+#nav div a.contact:hover {
+	margin-left:-16px;
+	background-position:-649px -62px;
+} /* 当内容为“联系我们”的锚点a标签中:hover被激活时，通过负边距改变点其位置，以及通过css sprite技巧显示背景图片 */
+</style>
+<title>怪异的导航</title>
+</head>
+
+<body>
+<map id="nav">
+	<div><a href="#" class="index">首页</a> <a href="#" class="intro">公司简介</a> <a href="#" class="honor">企业荣誉</a> <a href="#" class="flow">工艺流程</a> <a href="#" class="product">产品展示</a> <a href="#" class="sale">销售网络</a> <a href="#" class="buy">网上订购</a> <a href="#" class="contact">联系我们</a></div>
+</map>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简易css相册</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+} /* 将页面中所有元素的内外补丁设置为0，便于后期的调整 */
+#photo {
+	position:relative;
+	width:748px;
+	height:590px;
+	margin:0 auto; /* 在标准模式下将容器居中显示 */
+	background:#333333;
+} /* 定义相册的整体宽高属性以及背景颜色，并设置相对定位，便于其子级元素的定位控制 */
+h1 {
+	position:absolute;
+	bottom:10px;
+	right:10px;
+	width:100px;
+	height:20px;
+	text-align:right;
+	font:normal 12px/1.5em "宋体";
+	color:#FFFFFF;
+} /* 设置相册标题的样式，以及利用定位的方式将其控制在相册内容中的右下角 */
+ul {
+	float:right;
+	width:148px;
+	height:590px;
+	list-style:none;
+} /* 将所有相片以列表形式居左显示 */
+li {
+	float:left;
+	width:54px;
+	height:54px;
+	margin:10px;
+	display:inline; /* 解决IE6双倍间距的BUG */
+	overflow:hidden;
+} /* 将相册列表的默认宽高设置为54px，并浮动排列显示 */
+</style>
+</head>
+
+<body>
+<div id="photo">
+	<h1>简易css相册</h1>
+	<ul>
+		<li><a href="#"><img src="images/1.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/2.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/3.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/4.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/5.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/6.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/7.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/8.jpg" alt="" /></a></li>
+		<li><a href="#"><img src="images/9.jpg" alt="" /></a></li>
+	</ul>
+</div>
+</body>
+</html>

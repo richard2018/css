@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+body {
+	font:normal 12px/1.5em simsun, Verdana,Lucida, Arial, Helvetica, sans-serif;
+	/* 定义页面中的所有元素的文字样式 */
+	background:#344650 url(images/bg_body.jpg) no-repeat -500px -200px;
+	/* 定义页面的背景颜色以及背景图片，也定义了背景图片的显示方式 */
+}
+.list_box {
+	position:relative; /* 添加相对定位，使其子级有定位的参考对象 */
+	float:left;
+	width:200px;
+	margin-right:15px;
+	border:1px solid #E8E8E8;
+} /* 将页面中的两个容器浮动，并列显示，并给予宽度属性、边框属性 */
+.list_box * {
+	margin:0;
+	padding:0;
+	list-style:none;
+} /* 将页面中所有元素的内补丁和外补丁设置为0，并且去除列表的修饰符 */
+.list_box h3 {
+	height:24px;
+	margin-bottom:8px;
+	line-height:24px;
+	text-indent:10px;
+	color:#FFFFFF;
+	background-color:#666666;
+} /* 定义标题的高度以及标题文字显示的方式，为了美观也定义了标题的文字颜色和背景颜色 */
+.list_box li {
+	position:relative;
+	z-index:2; /* 添加相对定位，并添加层叠级别数，使其叠加在背景之上 */
+	float:left;
+	width:100%; /* 设置浮动并且设置宽度为100%可以避免IE浏览器中列表高度递增的BUG */
+	height:22px;
+	line-height:22px;
+	text-indent:10px;
+	border-bottom:1px dashed #E8E8E8;
+} /* 定义列表的宽度以及高度，并设置列表底边框为浅灰色的虚线 */
+.name_list .bg {
+	position:absolute;
+	top:24px;
+	left:0;
+	width:200px;
+	height:284px;
+	background-color:#DCDCDC;
+	filter:alpha(opacity=60); /* 针对IE浏览器的透明度 */
+	opacity:0.6; /* 针对FF浏览器的透明度 */
+} /* 将成员列表模块设置为透明，透明度为60% */
+.year_list {
+	background-color:#DCDCDC;
+} /* 设置事迹列表的背景颜色 */
+</style>
+<title>透明的图文信息</title>
+</head>
+
+<body>
+<!-- 成员列表 开始 -->
+<div class="name_list list_box">
+	<h3>成员名单</h3>
+	<div class="content">
+		<ul>
+			<li>小志</li>
+			<li>小呆</li>
+			<li>大城</li>
+			<li>小爱</li>
+			<li>小人</li>
+			<li>自然卷</li>
+			<li>小风</li>
+			<li>小帽</li>
+			<li>小Q</li>
+			<li>小毛</li>
+			<li>感恩的心</li>
+			<li>小新</li>
+		</ul>
+	</div>
+	<div class="bg"></div>
+</div>
+<!-- 成员列表 结束 -->
+<!-- 事迹列表 开始 -->
+<div class="year_list list_box">
+	<h3>事迹列表</h3>
+	<div class="content">
+		<ul>
+			<li>1999年的事迹</li>
+			<li>2000年的事迹</li>
+			<li>2001年的事迹</li>
+			<li>2002年的事迹</li>
+			<li>2003年的事迹</li>
+			<li>2004年的事迹</li>
+			<li>2005年的事迹</li>
+			<li>2006年的事迹</li>
+			<li>2007年的事迹</li>
+			<li>2008年的事迹</li>
+			<li>2009年的事迹</li>
+		</ul>
+	</div>
+	<div class="bg"></div>
+</div>
+<!-- 事迹列表 结束 -->
+</body>
+</html>

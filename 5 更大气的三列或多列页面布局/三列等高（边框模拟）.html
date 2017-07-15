@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+.header, .footer {
+	width:960px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#AAAAAA;
+}
+.container {
+	position:relative; /* 内容区域父级设定相对定位，便于其子元素有相对的元素绝对定位 */
+	width:960px;
+	text-align:center;
+	color:#FFFFFF;
+}
+.mainBox {
+	width:960px;
+}
+.mainBox .content {
+	border-left:310px solid #999999; /* 左侧的边框色，模拟次要内容区域的背景色 */
+	border-right:210px solid #333333; /* 右侧的边框色，模拟侧边栏的背景色 */
+	background-color:#000000;
+}
+.subMainBox {
+	position:absolute;
+	top:0;
+	left:0; /* 将次要内容区域绝对定位在.container元素的左上角 */
+	width:300px;
+}
+.sideBox {
+	position:absolute;
+	top:0;
+	right:0; /* 将侧边栏绝对定位在.container元素的右上角 */
+	width:200px;
+}
+.footer {
+	clear:both;
+}
+</style>
+<title>三列等高（边框模拟）</title>
+</head>
+
+<body>
+<div class="header">头部信息</div>
+<div class="container">
+	<div class="mainBox">
+		<div class="content">
+			<p>主要内容区域</p>
+			<p>多一点文字信息</p>
+			<p>更能看得清楚到底是是不是等高</p>
+			<p>吃饱了才会撑开</p>
+			<p>差不多饱了</p>
+			<p>不用太饱~</p>
+		</div>
+	</div>
+	<div class="subMainBox">次要内容区域</div>
+	<div class="sideBox">侧边栏</div>
+</div>
+<div class="footer">底部信息</div>
+</body>
+</html>

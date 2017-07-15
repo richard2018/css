@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+.header, .footer {
+	width:960px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#AAAAAA;
+}
+.container {
+	width:960px;
+	text-align:center;
+	color:#FFFFFF;
+}
+.mainBox {
+	float:left;
+	width:960px;
+}
+.mainBox .content {
+	margin:0 210px 0 310px;
+	background-color:#000000;
+}
+.subMainBox {
+	float:left;
+	width:300px;
+	margin-left:-100%;
+	background-color:#666666;
+}
+.sideBox {
+	float:left;
+	width:200px;
+	margin-left:-200px;
+	background-color:#333333;
+}
+.footer {
+	clear:both;
+}
+</style>
+<title>三列等高（其他方式）</title>
+</head>
+
+<body onload="equalColumns('subMainBox','m_content','sideBox')">
+<div class="header">头部信息</div>
+<div class="container">
+	<div class="mainBox">
+		<div class="content" id="m_content">
+			<p>主要内容区域</p>
+			<p>多一点文字信息</p>
+			<p>更能看得清楚到底是是不是等高</p>
+			<p>吃饱了才会撑开</p>
+			<p>差不多饱了</p>
+			<p>不用太饱~</p>
+		</div>
+	</div>
+	<div class="subMainBox" id="subMainBox">次要内容区域</div>
+	<div class="sideBox" id="sideBox">侧边栏</div>
+</div>
+<div class="footer">底部信息</div>
+<script type="text/javascript" src="equalColumns.js"></script>
+</body>
+</html>

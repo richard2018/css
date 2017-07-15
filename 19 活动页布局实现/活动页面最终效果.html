@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>活动页面布局实现</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+} /* 将页面中所有元素的内补丁和外补丁设置为0，并且将列表元素的修饰符取消 */
+body {
+	color:#FFFFFF;
+	background-color:#000000;
+} /* 设置页面中的文字颜色为白色，背景颜色为黑色 */
+.header {
+	width:1001px;
+	height:223px; /* 高度是为标题h1标签预留用于显示其背景图片 */
+	padding-top:229px; /* 利用内补丁显示背景的特性，显示第一张背景图片 */
+	background:url(images/bg_1.jpg) no-repeat 0 0; /* 显示第一张背景图片 */
+}
+.header h1 {
+	height:223px; /* 设置标题h1标签的高度 */
+	overflow:hidden;
+	text-indent:-9999px; /* 利用文本缩进的特性隐藏标题中的文字 */
+	background:url(images/bg_2.jpg) no-repeat 0 0; /* 显示第二张背景图片 */
+}
+.main_box {
+	position:relative; /* 设置主要内容信息区域相对定位，作为其内容绝对定位的参照对象 */
+	width:1001px;
+	height:861px; /* 设置主要内容信息区域的宽度和高度属性值 */
+	background:url(images/bg_3.jpg) no-repeat 0 0; /* 显示第三张背景图片 */
+}
+.main_box p.mov_info {
+	position:absolute;
+	top:415px;
+	left:0; /* 将影片总评的段落p标签设置绝对定位，离顶部415px，即第三张图片的高度 */
+	width:1001px;
+	height:446px; /* 设置影片总评的段落p标签的宽度和高度属性值 */
+	overflow:hidden;
+	text-indent:-9999px; /* 利用文本缩进的特性隐藏标题中的文字 */
+	background:url(images/bg_4.jpg) no-repeat 0 0; /* 显示第四张背景图片 */
+}
+.main_box h2, .main_box .content p {
+	display:none;
+} /* 隐藏内容区域中的段落内容和标题 */
+.copyright {
+	width:1001px;
+	height:30px; /* 设置版权信息的宽度和高度属性 */
+	text-align:center; /* 将版权信息的文本居中显示 */
+	font:normal 12px/30px "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif; /* 设置版权信息中文字的属性，并设置30px的行高 */
+}
+.mov_box li {
+	position:relative; /* 定义相对定位，使其子元素的绝对定位有参照对象 */
+	float:left; /* 将所有的列表并列显示 */
+	width:92px;
+	height:142px; /* 设置所有列表li标签的宽度和高度属性值 */
+	margin-right:30px; /* 调整列表之间的外补丁，增加间距 */
+}
+.mov_box li a {
+	position:absolute;
+	top:0;
+	left:0; /* 设置a链接的绝对定位方式，使其覆盖在图片上面 */
+	width:92px;
+	height:142px; /* 设置a连接的宽度和高度等同与其父级元素li标签，占据列表li标签的所有空间 */
+	overflow:hidden;
+	text-indent:-9999px; /* 利用文本缩进的特性隐藏标题中的文字 */
+	background:url(images/bg_4.jpg) no-repeat 10000px 10000px; /* 解决IE浏览器中空锚点a标签链接部分无效的方法 */
+}
+.mov_box {
+	position:absolute;
+	top:292px;
+	left:90px; /* 将所有的影片列表以绝对定位的方式布局在页面中相应的位置 */
+	width:366px;
+	height:140px; /* 设置影片列表模块的宽度和高度属性值 */
+}
+.dream {
+	left:567px; /* 调整“金属式的梦想”模块的布局位置 */
+}
+.love {
+	top:647px; /* 调整“钢铁式的爱情”模块的布局位置 */
+}
+.life {
+	top:647px;
+	left:567px; /* 调整“永恒式的生命”模块的布局位置 */
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+	<h1>机器人的生命独白 金属打造的钢铁幻梦</h1>
+</div>
+<div class="main_box">
+	<p class="mov_info">程亮的肌肤泛着金属的光泽；坚毅的轮廓潜藏着钢铸的勇气；狂放的速度来自于无穷的动力；隽永的力量挥洒着豪迈的激情……<strong>《终结者2018》</strong>、<strong>《变形金刚2》</strong>那是你们类人赋予我的称谓；破坏也罢、守护也好只是程序给予我的指令；生存与死亡也不能成为我完成目标的阻碍；从我们有知觉的那一刻开始就只为使命而活，知道锈迹斑斑、支离破碎被人遗忘在那废弃的阴暗角落……</p>
+	<div class="mov_box naivete">
+		<h2>机械式的纯真</h2>
+		<div class="content">
+			<p>我知道虽然你们创造了我，但是从心底里你们害怕我。因为与我的金刚不坏之体相比较，你们显得那么的脆弱不堪。但是无需害怕，我们绝对不会上海你们，因为只要和你们在一起，爱、憎、欢喜、恐惧、忧伤那一切属于你们的情感都会深深的感染着我。</p>
+			<ul>
+				<li><img src="images/mov_pic_01.jpg" alt="《一号杀手》" /><a href="#" title="点播《一号杀手》">点播《一号杀手》</a></li>
+				<li><img src="images/mov_pic_02.jpg" alt="《Robocop》" /><a href="#" title="点播《Robocop》">点播《Robocop》</a></li>
+				<li><img src="images/mov_pic_03.jpg" alt="《星际铁骑》" /><a href="#" title="点播《星际铁骑》">点播《星际铁骑》</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mov_box dream">
+		<h2>金属式的梦想</h2>
+		<div class="content">
+			<p>战斗！破坏！毁灭！是你们赋予我们的使命！你们人类乐此不疲的互相残杀，却用我们作为武器来到达目的。我有一个梦想：这个世界不再以我们为武器，我们仅仅只是建筑工、医生护士、清洁工、保姆……</p>
+			<ul>
+				<li><img src="images/mov_pic_01.jpg" alt="《一号杀手》" /><a href="#" title="点播《一号杀手》">点播《一号杀手》</a></li>
+				<li><img src="images/mov_pic_02.jpg" alt="《Robocop》" /><a href="#" title="点播《Robocop》">点播《Robocop》</a></li>
+				<li><img src="images/mov_pic_03.jpg" alt="《星际铁骑》" /><a href="#" title="点播《星际铁骑》">点播《星际铁骑》</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mov_box love">
+		<h2>钢铁式的爱情</h2>
+		<div class="content">
+			<p>你们说我们生来孤独，没有性别，更不可能拥有爱情。但是每当看见你们花前月下、海誓山盟、亲密无间的时候，我那冰冷金属的心脏却会莫名的悸动不安起来。我以为自己要进修理厂，却被告知没有问题，好吧，也许爱情的魔力让我化身成人。</p>
+			<ul>
+				<li><img src="images/mov_pic_01.jpg" alt="《一号杀手》" /><a href="#" title="点播《一号杀手》">点播《一号杀手》</a></li>
+				<li><img src="images/mov_pic_02.jpg" alt="《Robocop》" /><a href="#" title="点播《Robocop》">点播《Robocop》</a></li>
+				<li><img src="images/mov_pic_03.jpg" alt="《星际铁骑》" /><a href="#" title="点播《星际铁骑》">点播《星际铁骑》</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mov_box life">
+		<h2>永恒式的生命</h2>
+		<div class="content">
+			<p>你们人类最害怕死亡，你们羡慕我们那永恒的生命。其实我们也在羡慕你们，遥无边际的漫长生命让我们很抑郁。看着熟悉的你们一哥哥生老病死，我们不得不再重新寻求下一个主人，其实机器的情感从不微距死亡，因为与死亡比起来我们更害怕孤独。</p>
+			<ul>
+				<li><img src="images/mov_pic_01.jpg" alt="《一号杀手》" /><a href="#" title="点播《一号杀手》">点播《一号杀手》</a></li>
+				<li><img src="images/mov_pic_02.jpg" alt="《Robocop》" /><a href="#" title="点播《Robocop》">点播《Robocop》</a></li>
+				<li><img src="images/mov_pic_03.jpg" alt="《星际铁骑》" /><a href="#" title="点播《星际铁骑》">点播《星际铁骑》</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="copyright">版权所有 迅雷网络有限公司</div>
+</body>
+</html>

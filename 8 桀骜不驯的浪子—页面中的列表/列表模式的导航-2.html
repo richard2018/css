@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>列表模式的导航</title>
+<style type="text/css">
+.site_nav {
+	width:100px; /* 设置导航容器的宽度为100px */
+}
+.site_nav h1 {
+	display:none; /* 隐藏导航的标题 */
+}
+#nav ul, #nav li {
+	list-style:none;
+	padding:0;
+	margin:0;
+} /* 将列表的默认修饰图以及内外补丁设置为0，便于后期的调整 */
+#nav li {
+	height:22px; /* 设置列表li标签的高度为22px */
+}
+#nav li a {
+	display:block; /* 将内联元素设置为块元素，使其具备宽高 */
+	height:100%; /* 设置锚点a标签的高度为父容器的高度 */
+	text-align:center; /* 容器内的文本居中 */
+	text-decoration:none; /* 设置文本无下划线 */
+	font:normal 12px/22px "宋体", Verdana,Lucida, Arial, Helvetica, sans-serif; /* 设置锚点a标签的字体样式、字体大小、行高以及字体列表 */
+	color:#FFFFFF; /* 设置锚点a标签的文字颜色 */
+	background-color:#333333; /* 设置锚点a标签的背景颜色 */
+}
+#nav li a:hover {
+	color:#000000;
+	background-color:#E8E8E8;
+} /* 当鼠标经过锚点a标签时，改变其原有的文字颜色和背景颜色 */
+</style>
+</head>
+
+<body>
+<div class="site_nav">
+	<h1>站点导航</h1>
+	<map id="nav">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">个人介绍</a></li>
+			<li><a href="#">作品展示</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+	</map>
+</div>
+</body>
+</html>
