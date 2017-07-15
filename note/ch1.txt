@@ -1,0 +1,84 @@
+1.div属性写法
+div{
+	border-width:20px;
+	border-style:solid;
+	border-color:#FF0000;
+}
+简写：
+div{
+	border:20px solid #FF0000;
+}
+
+div {
+	border-width: 1px;
+	border-style:solid dashed double; /** 上边为实线 左右为虚线  下边为双线边框  **/
+	border-color:#FF0000 #000000; /** 上下边框为红色  ，左右边框为黑色 **/
+}
+
+2.backgroud的写法
+body {
+	background-color:#FF0000; /* 定义背景为红色 */
+	background-image:url(background.gif);
+	background-repeat:no-repeat;/* 背景图片无平铺 */
+	background-attachment:fixed; /* 背景图片固定，不随页面滚动而滚动 */
+	background-position:0 0; /** 定义背景图片的位置，必须先定义背景图片后才有效 **／
+}
+缩写：
+body{
+	background:#FF0000 url(background.gif) no-repeat fixed 0 0;
+}
+
+background的属性默认值:
+background-color:transparent
+background-images:none
+background-repeat:repeat
+background-attachment:scroll
+background-position:0% 0%
+3.字体
+body {
+	font-style:italic;
+	font-variant:small-caps;
+	font-weight:bold;
+	font-size:12px;
+	line-height:140%;
+	font-family:"Lucida Grande" , sans-serif;
+}
+简写：
+body {
+	font:italic small-caps bold 12px/140% "Lucida Grande",sans-serif;
+}
+4.li
+li {
+	list-style-type:square; // 列表的预设标记定义为实心方块
+	list-style-position:inside;//将项目标记放置在文本以内，且环绕文本根据标记对齐 
+	list-style-image:url(image.gif);
+}
+简写：
+li {
+	url(image.gif) inside square
+}
+注意：对于list-style的预设列表项在实际中经常是以图片来代替的，图片不是用list-style-image属性实现的，而是用background背景
+属性来实现的。前提是需要设置列表的list-style:none;属性；
+
+5.注意理解包含选择符和子元素选择符的区别
+
+6.相邻选择符
+
+7.伪类
+a:link{color:red;}
+a:visited{color:blue;}
+a:hover{color:green;}
+a:active{color:black;}
+
+8.伪对象
+p:before
+p:after
+
+9.选择符的权重优先级别
+标签选择符、伪类及伪对象：1
+类选择符、属性选择符：10
+ID选择符:100
+style属性:1000
+其它选择符：0
+
+!important
