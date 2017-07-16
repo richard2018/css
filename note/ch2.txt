@@ -1,0 +1,11 @@
+1.盒子模型
+tip1: 背景色或背景图片都是显示在内补丁(padding)及内容区域内的。
+tip2: 不写或错写doctype,会触发ie以怪异模式运行
+tip3: text-align,在ie上会出现继承,其它浏览器则不行
+tip4: margin-left:auto margin-right:auto
+tip4: 居右显示
+float:right;
+
+position:absolute;
+right:0;
+
