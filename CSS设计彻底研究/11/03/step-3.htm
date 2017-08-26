@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>5背景图可变宽圆角框</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+body {
+background: #FFFF99;
+font: 12px/1.5 Arial;
+}
+.rounded {
+   background: url(images/left-top.gif) top left no-repeat;
+   width:90%;
+   }
+.rounded h3 {
+   background: url(images/right-top.gif) top right no-repeat;
+   padding:20px 20px 10px;
+   margin:0;
+   }
+.rounded .main {
+   background: url(images/right.gif) top right repeat-y;
+   padding:10px 20px;
+   margin:-2em 0 0 0;
+   }
+.rounded .footer {
+   background: url(images/left-bottom.gif) bottom left no-repeat;
+   }
+.rounded .footer p {
+   background:url(images/right-bottom.gif) bottom right no-repeat;
+   display:block;
+   padding:10px 20px 20px;
+   margin:-2em 0 0 0;
+  }
+</style>
+</head>
+<body>
+<div class="rounded">
+		<h3>Article header</h3>
+		<div class="main">
+			<p>
+			这是一行文本，这里作为样例，显示在圆角框。<br />
+			这是一行文本，这里作为样例，显示在圆角框。
+			</p>
+			<p>
+			这是一行文本，这里作为样例，显示在圆角框。<br />
+			这是一行文本，这里作为样例，显示在圆角框。
+			</p>
+		</div>
+		<div class="footer">
+			<p>
+			这是版权信息文字。
+			</p> 
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    	<style>
+		#menu {
+		  font-family:Arial;
+		  font-size:14px;
+		  }
+		  
+	    #menu a, #menu a:visited {
+		  display:block; 
+		  float:left;
+		  position:relative;
+		  background-color:#c00;
+		  color:#fff; 
+		  text-decoration:none;
+		  padding:6px;
+		  margin:1px 0 0 1px; 
+		  }
+		 
+		 #menu a span{
+		 height:0;
+		 width:0;
+		 border-bottom:solid 6px #c00;
+		 border-left:solid 6px #fff;
+		 position:absolute;
+		 top:0;
+		 left:0;
+		 overflow:hidden;
+		 }
+		  
+		#menu a:hover{
+		background-color: #F90;
+		color:#333
+		}
+		
+		#menu a:hover span{
+		border-bottom:solid 6px #f90;
+		}
+		
+
+   		</style>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>自适应的水平的菜单</title></head>
+
+<body>
+    <div id="menu">
+       <a href="#">
+	       <span class="left"></span> 
+			   Home </a> 
+       <a href="#">
+	        <span class="left"></span>
+	           Contact Us </a>
+       <a href="#">
+	   		<span class="left"></span>
+				Web Dev </a> 
+       <a href="#">
+			<span class="left"></span>
+	   			Web Design </a> 
+       <a href="#">
+	   		<span class="left"></span>
+				Map	</a>
+    </div>
+</body>
+</html>
+

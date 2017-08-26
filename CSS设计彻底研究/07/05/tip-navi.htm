@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+
+    	<style>
+
+
+#menu { 						/*对menu层设置*/
+   font-family:Arial;			/*字体*/
+   font-size:16px;				/*字号*/
+   width:140px; 				/*宽度*/
+   margin:0;					/*菜单项之间间隔0.5em，并水平居中*/
+   border:solid 1px #ccc;		/*灰色细边框*/
+   }
+
+#menu a, #menu a:visited {
+  text-decoration:none; 			/*文字无下划线*/
+  text-align:center; 				/*文字水平居中对齐*/
+  color:#c00; 						/*红色文字*/
+  display:block;					/*设置为块级元素*/
+  padding:4px;						/*内边距*/
+  background-color:#fff; 			/*背景色*/
+  border:solid 1px #fff;			/*与背景色相同边框，防止跳动*/
+  position:relative;				/*使用相对定位*/
+  width:130px;
+  }
+
+#menu a span {
+  display:none;
+  }
+#menu a:hover {
+  border-color:#c00;				/*边框颜色红色*/
+  }
+  
+#menu a:hover span {
+  display:block; 					/*设置为块级元素*/
+  position:absolute; 				/*使用绝对定位*/
+  height:0; 						/*高度为0*/
+  width:0; 							/*宽度为0*/
+  overflow:hidden; 					/*防止溢出*/
+  border:solid 8px #fff;			/*设置默认的边框样式*/
+  top:4px;							/*竖直方向的定位*/	
+  }
+
+  #menu a:hover span.left {
+  border-left-color:#c00;
+  left:8px;
+  }
+
+  #menu a:hover span.right {
+  border-right-color:#c00;
+  right:8px;
+  }
+ 
+ #menu a:hover span.intro {
+  font-size:12px;
+  display:block; 
+  position:absolute; /*绝对定位*/
+  left:150px; 
+  top:0px; 
+  padding:5px; 
+  width:100px;
+  height:auto;
+  background-color:#eee; 
+  color:#000; 
+  border:1px dashed #234;
+  }
+
+   		</style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>带说明信息的菜单</title></head>
+
+<body>
+    <div id="menu">
+       <a href="#">
+	        <span class="left"></span> 
+			   Home 
+			<span class="right"></span>
+			<span class="intro">这里说明Home菜单项</span>
+		</a> 
+       <a href="#">
+	        <span class="left"></span>
+	           Contact Us
+			<span class="right"></span>
+			<span class="intro">这里说明Contact Us菜单项</span>
+	   </a>
+       <a href="#">
+	   		<span class="left"></span>
+				Web Dev
+			<span class="right"></span>	   
+			<span class="intro">这里说明Web Dev菜单项</span>
+	   </a> 
+       <a href="#">
+			<span class="left"></span>
+	   			Web Design
+	   		<span class="right"></span>	
+			<span class="intro">这里说明Web Design菜单项</span>
+	   </a> 
+       <a href="#">
+	   		<span class="left"></span>
+				Map
+			<span class="right"></span>
+			<span class="intro">这里说明Map菜单项</span>
+		</a>    
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Calendar</title>
+<style>
+<!--
+.month {
+	border-collapse: collapse;
+	table-layout:fixed;
+	width:780;
+}
+.month caption {
+	text-align: left;
+	font: normal normal bold 130% normal 宋体, arial;
+	padding-bottom: 6px;
+}
+
+.month caption a{
+	 font-size:12px;
+	 font-weight:normal;
+}
+.month th {
+	border: 1px solid #999999;
+	border-bottom: none;
+	padding: 3px 2px 2px;
+	margin:0;
+	background-color: #ADD;
+	color: #2F2F2F;
+	font: 80% Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.month td {
+	border: 1px solid #AAA;
+	font: 12px 宋体;
+   line-height:16px;
+	padding: 2px 2px;
+	margin:0;
+	vertical-align: top;
+	}
+.month td.previous, .month td.next {
+	background-color: #eee;
+	color: #A6A6A6;
+}
+.month td.active {
+	background-color: #B1CBE1;
+	border: 2px solid #4682B4;
+}
+
+.month ul {
+	list-style-type: none;
+	margin: 3px;
+	padding:0;
+}
+
+.month li {
+	color:#fff;
+   background:transparent url(level-2.gif) no-repeat;
+   padding:2px;
+	margin-bottom: 6px;
+	height:34px;
+	overflow:hidden;
+	width:100px;
+}
+
+.month td li.important{
+   background:transparent url(level-1.gif) no-repeat;
+}
+
+/***********************************/
+
+.month td{
+	display:block;
+}
+
+
+.month li{
+	width:370px;
+   background:transparent url(level-2-long.gif) no-repeat;
+    display:table-cell;
+}
+
+.month td li.important{
+   background:transparent url(level-1-long.gif) no-repeat;
+}
+
+.month th{
+	display:none;
+}
+
+-->
+</style>
+</head>
+<body>
+<table class="month" summary="Calendar for January 2007">
+	<caption>&nbsp;2007年10月 <a>小模式</a> <a>中模式</a> <a>大模式</a></caption>
+	<tr>
+		<th scope="col"><span>星期</span>一</th>
+		<th scope="col"><span>星期</span>二</th>
+		<th scope="col"><span>星期</span>三</th>
+		<th scope="col"><span>星期</span>四</th>
+		<th scope="col"><span>星期</span>五</th>
+		<th scope="col"><span>星期</span>六</th>
+		<th scope="col"><span>星期</span>日</th>
+	</tr>
+	<tr>
+		<td class="previous">31</td>
+		<td>1</td>
+		<td class="active">2
+		<ul>
+			<li class="important">完成书稿第2部分</li>
+			<li>查Javascript资料的相关资料</li>
+			<li>查ASP.net资料的相关资料</li>
+		</ul>
+		</td>
+		<td>3</td>
+		<td>4</td>
+		<td>5</td>
+		<td>6</td>
+	</tr>
+	<tr>
+		<td class="active">7
+		<ul>
+			<li>检查案例实施进度</li>
+		</ul>
+		</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+		<td>11</td>
+		<td>12</td>
+		<td class="active">13
+		<ul>
+			<li class="important">CSS禅意花园案例分析</li>
+			<li>给Dave回复邮件</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>15</td>
+		<td>16</td>
+		<td class="active">17
+		<ul>
+			<li>artech.cn网站改版策划</li>
+		</ul>
+		</td>
+		<td class="active">18
+		<ul>
+			<li>录制CSS视频教程</li>
+			<li>其他视频教程策划</li>
+		</ul>
+		</td>
+		<td>19</td>
+		<td>20</td>
+	</tr>
+	<tr>
+		<td>21</td>
+		<td>22</td>
+		<td>23</td>
+		<td>24</td>
+		<td>25</td>
+		<td class="active">26
+		<ul>
+			<li>中关村图书大厦调研</li>
+		</ul>
+		</td>
+		<td class="active">27
+		<ul>
+			<li>西单图书大厦调研</li>
+			<li>北京图书大厦调研</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>28</td>
+		<td>29</td>
+		<td >30
+		</td>
+		<td class="active">31
+			<ul>
+			<li class="important">准备出差资料</li>
+			<li>整理硬盘文件资料</li>
+			</ul>
+		</td>
+		
+		<td class="next">1</td>
+		<td class="next">2</td>
+		<td class="next">3</td>
+	</tr>
+</table>
+</body>
+</html>

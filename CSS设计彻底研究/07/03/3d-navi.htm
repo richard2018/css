@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+              "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>立体菜单</title>
+    	<style>
+
+
+#menu { 						/*对menu层设置*/
+   font-family:Arial;			/*字体*/
+   font-size:14px;				/*字号*/
+   }
+
+#menu a, #menu a:visited {
+  text-decoration:none; 			/*文字无下划线*/
+  text-align:center; 				/*文字水平居中对齐*/
+  color:#fff; 						/*白色文字*/
+  display:block;					/*设置为块级元素*/
+  width:10em; 						/*宽度*/
+  padding:0.25em;					/*内边距*/
+  margin:0.5em auto;				/*菜单项之间间隔0.5em，并水平居中*/
+  background-color:#8ab; 			/*背景色*/
+  border:2px solid #fff;			/*边框粗细2像素*/
+  border-color:#def #678 #345 #cde;	/*边框颜色显示突起效果*/
+  position:relative;				/*使用相对定位*/
+  }
+
+#menu a:hover {
+  top:2px;							/*向下移动2像素*/
+  left:2px;							/*向右移动2像素*/
+  border-color:#345 #cde #def #678;	/*边框颜色显示突起效果*/
+  }
+   		</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /></head>
+
+<body>
+    <div id="menu">
+       <a href="#"> Home</a> 
+       <a href="#"> Contact Us</a>
+       <a href="#"> Web Dev</a> 
+       <a href="#"> Web Design</a> 
+       <a href="#"> Map</a> 
+    </div>
+</body>
+</html>
+

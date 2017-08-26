@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>盒子模型的演示</title>
+    <style type="text/css">
+	body{
+	margin:0 0 0 0;
+	font-family:宋体;
+	font-size:12px;
+	
+	}
+      ul { 
+        background: #ddd; 
+        margin: 15px 15px 15px 15px;
+        padding: 5px 5px 5px 5px;
+                                     /* 没有设置边框 */
+      }
+      li { 
+        color: black;                /* 黑色文本 */ 
+        background: #aaa;            /* 浅灰色背景 */
+        margin: 20px 20px 20px 20px; /* 左侧外边距为0，其余为20像素*/
+        padding: 10px 0px 10px 10px; /* 右侧内边距为0，其余10像素 */
+        list-style: none             /* 取消项目符号 */
+                                     /* 未设置边框 */
+      }
+      li.withborder {
+        border-style: dashed;
+        border-width: 5px;       	/* 设置边框为2像素 */
+        border-color: black;
+        margin-top:20px； 
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>第1个列表的第1个项目内容</li>      
+      <li class="withborder">第1个列表的第2个项目内容，内容更长一些，目的是演示自动折行的效果。</li>
+    </ul>
+    <ul>
+      <li>第2个列表的第1个项目内容</li>
+      <li class="withborder">第2个列表的第2个项目内容，内容更长一些，目的是演示自动折行的效果。</li>
+    </ul>
+
+  </body>
+</html>
+

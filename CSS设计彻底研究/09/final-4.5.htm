@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>二级菜单</title>
+<style type="text/css">
+
+
+
+/* 整体设置*/ 
+#menu {
+	margin:0; 
+	padding:0;
+	width:610px;
+	list-style-type:none; 
+	font:14px Arial; 
+	}
+
+#menu li {
+	float:left; 
+    padding:0; 
+	margin:0 1px 0 0; 
+	width:150px;
+	}
+
+/* 设置菜单项*/
+#menu li dl { 
+	width:150px;/*ie6*/
+    margin: 0; 
+	padding: 0 0 10px 0; 
+	background: #cb6 url(images/bottom.gif) no-repeat bottom left; 
+	}
+
+
+#menu li dt a,#menu li dd a{ display:block;}
+
+
+/* 设置菜单项的dt */
+/* 设置菜单项的dt */
+#menu li dt { 
+	margin:0; 
+    padding: 5px; 
+  	text-align:center;
+	border-bottom:1px solid #b00;
+	background:#ed8 url(images/top.gif) no-repeat top left;
+	}
+
+
+
+#menu li dt a ,#menu li dt a:visited {
+	display:block; 
+    color:#333;
+    text-decoration:none;
+	}
+
+	
+/* 设置菜单项的dd */
+#menu li dd { 
+
+	margin:0; 
+    padding:0; 
+	color: #fff; 
+	background: #47a; 
+	}
+
+#menu li dd.last {
+	border-bottom:1px solid #b00;
+	}
+
+#menu li dd a, #menu li dd a:visited {
+height:1em;
+	display:block; 
+	color:#fff; 
+    text-decoration:none; 
+	padding:4px 5px 4px 20px;
+    background: #47a url(images/arrow.gif) no-repeat 10px 10px; 
+    }	
+    
+/*关闭子菜单*/
+
+#menu li dd { display:none;}
+
+/* 设置鼠标响应 */
+
+
+
+#menu li:hover dd  { display:block;}
+
+#menu li dd a:hover {
+	background: #147; 
+    color:#9cf;
+	}
+
+
+</style>
+</head>
+
+<body>
+	<ul id="menu">
+		<li>
+			<dl>
+				<dt><a href="#">Artech Studio</a></dt>
+				<dd><a href="#">Web Dev</a></dd>
+				<dd><a href="#">Web Design</a></dd>
+				<dd><a href="#">Books</a></dd>
+				<dd class="last"><a href="#">Contact Us</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Store</a></dt>
+				<dd><a href="#">Books</a></dd>
+				<dd><a href="#">DVDs</a></dd>
+				<dd><a href="#">Movies</a></dd>
+				<dd class="last"><a href="#">Service</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Achi</a></dt>
+				<dd><a href="#">Landscape</a></dd>
+				<dd><a href="#">Plan</a></dd>
+				<dd><a href="#">Design</a></dd>
+				<dd class="last"><a href="#">Maps</a></dd>
+			</dl>	
+		</li>
+		<li>
+			<dl>
+				<dt><a href="#">Artech Science</a></dt>
+				<dd><a href="#">Physics</a></dd>
+				<dd><a href="#">Maths</a></dd>
+				<dd><a href="#">Chemistry</a></dd>
+				<dd class="last"><a href="#">Courses</a></dd>
+			</dl>	
+		</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,5 @@
+#wrapper{ margin:0 auto;position:relative;width:610px;height:559px;background-color: green;} 
+/* position:relative是绝对定位关键，父级设置 */ 
+.box1{ position:absolute; width:147px; height:140px; left:198px; top:14px;background-color:blue;} 
+.box2{position:absolute; width:141px; height:186px; left:31px; bottom:17px;background-color: yellow;} 
+.box3{position:absolute; width:132px; height:188px; right:28px; bottom:67px;background-color: black;} 

@@ -1,0 +1,6 @@
+1.不改变位置的左右浮动(不改变位置的左右浮动效果.html)
+外加一层固定宽度的div
+2.浮动产生的bug.html
+3.overflow可以解决一些float导致的问题
+4.display:table清除浮动
+5.p:after: 清除浮动

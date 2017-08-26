@@ -1,0 +1,48 @@
+//a{
+//	　&:hover{ 
+//		color: #ffb3ff;
+//	  }
+//}
+
+$side : left;
+.rounded {
+　　border-#{$side}-radius: 5px;
+}
+$var : 5;
+body {
+	margin: (14px/2);
+	top: 50px + 100px;
+	right: $var * 10%;
+}
+div {
+	hi {
+	　　color:red;
+	}
+}
+.class1 {
+	border: 1px solid #ddd;
+}
+
+.class2 {
+	@extend .class1;
+	font-size:120%;
+}
+
+@mixin left($value: 10px) {
+	float: left;
+	background-color:lighten(#cc3, 10%);
+	margin-left: $value;
+}
+div {
+	@include left(20px);
+};
+@mixin rounded($vert, $horz, $radius: 10px) {
+	　　　　border-#{$vert}-#{$horz}-radius: $radius;
+	　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
+	　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+}	
+
+#navbar li{ 
+	@include rounded(top, left); 
+}
+@import "f1.scss"

@@ -1,0 +1,14 @@
+li strong {
+	font-style: italic;
+	font-size:20px;
+	font-weight: normal;
+}
+/*#sidebar {*/
+/*	border: 2px dotted #000;*/
+/*	padding: 10px;*/
+/*}*/
+
+div#sidebar {
+	border: 1px dotted #000;
+	padding: 10px;
+}

@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html  xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>分栏背景色</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<style type="text/css">
+body{
+	font:12px/18px Arial;
+	margin:0;
+	}
+#header,#footer {
+	background:#CCCCFF;
+	width:85%;
+	margin:0 auto;
+	}
+h2{
+	margin:0;
+	padding:20px;
+	}
+p{
+	padding:20px;
+	text-indent:2em;	
+	margin:0;
+	}
+#container {
+	width:85%;
+	margin:0 auto;
+	background:url(images/background-right.gif) repeat-y top right;
+	position: relative;	
+	}
+
+#innerContainer {
+	background:url(images/background-left.gif) repeat-y top left;
+	}
+#navi {
+	width: 200px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+#content {
+	right: 0px;
+	top: 0px;
+	margin-right: 200px;
+	margin-left: 200px;
+	}
+#side {
+	width: 200px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	}
+</style>
+</head>
+<body>
+<div id="header">
+	<h2>Page Header</h2>
+</div>
+<div id="container">
+<div id="innerContainer">
+	<div id="navi">
+			<h2>Navi Bar</h2>
+		<ul>
+			<li>Home</li>
+			<li>Web Design</li>
+			<li>Web Dev</li>
+			<li>Map</li>
+			<li>Contact Us</li>
+			<li>Home</li>
+			<li>Web Design</li>
+		</ul>
+	</div>
+	<div id="content">
+		<h2>Page Content</h2>
+		<p>
+		对于一个网页设计者来说，HTML语言一定不会感到陌生，因为它是所有网页制作的基础。但是如果希望网页能够美观、大方，并且升级方便，维护轻松，那么仅仅HTML是不够的，CSS在这中间扮演着重要的角色。本课从CSS的基本概念出发，介绍CSS语言的特点。</p>
+		<p>
+		对于一个网页设计者来说，HTML语言一定不会感到陌生，因为它是所有网页制作的基础。但是如果希望网页能够美观、大方，并且升级方便，维护轻松，那么仅仅HTML是不够的，CSS在这中间扮演着重要的角色。本课从CSS的基本概念出发，介绍CSS语言的特点。</p>
+
+	</div>
+	<div id="side">
+		<h2>Side Bar</h2>
+		<ul>
+			<li>Web Dev</li>
+			<li>Map</li>
+			<li>Contact Us</li>
+		</ul>
+	</div>
+</div>
+</div>
+<div id="footer">
+	<h2>Page Footer</h2>
+</div>
+</body>
+</html>

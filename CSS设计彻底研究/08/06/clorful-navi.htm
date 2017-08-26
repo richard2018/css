@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会跳起的多彩菜单</title>
+<style type="text/css">
+ul{
+	height:26px;
+	margin:0;
+	padding:10px;
+	list-style-type:none;
+	background:#ddd;
+}
+
+.item{
+	float:left;
+	width:100px;
+	margin:0 -1px 0 0;
+	padding 0;
+	font: 14px Arial;
+	font-weight:bold;
+	}
+
+.item p{
+	padding:0 0 2px 0;
+	margin:0px;
+	text-align:center;
+	background:#cc6;
+	border:solid 1px  #000; 
+    border-top-width:0;
+}
+
+.item div{
+	height:1px;
+	overflow:hidden;
+	background:#cc6;
+	border-left:solid 1px  #000; 
+    border-right:solid 1px  #000;
+}
+
+.item .pad{
+	height:10px;
+	border:0;
+	background:transparent;
+}
+
+.item .row1{
+	margin:0 5px;
+	background:#000;
+}
+
+.item  .row2{
+	margin:0 3px;
+	border:0 2px;
+}
+
+.item .row3{
+	margin:0 2px;
+}
+.item .row4{
+	margin:0 1px;
+	height:2px;
+}
+
+
+.item a , .item a:visted{
+	display:block;
+	color:#000;
+	text-decoration:none;
+}
+
+.item a:hover{
+	background:transparent;
+}
+
+.item a:hover p{
+	background:#884;
+	padding-bottom:12px;
+}
+
+.item a:hover .pad{
+	height:0px;
+}
+
+.item a:hover .row2,
+.item a:hover .row3 ,
+.item a:hover .row4{
+	background:#884;
+}
+
+
+.orange p,
+.orange .row2,
+.orange .row3,
+.orange .row4,
+{
+	background:#fa0;
+}
+
+.orange a:hover p,
+.orange a:hover .row2,
+.orange a:hover .row3,
+.orange a:hover .row4,
+{
+	background:#fa0;
+}
+
+.yellow p,
+.yellow .row2,
+.yellow .row3,
+.yellow .row4,
+{
+	background:#ff0;
+}
+
+.yellow a:hover p,
+.yellow a:hover .row2,
+.yellow a:hover .row3,
+.yellow a:hover .row4,
+{
+	background:#ff0;
+}
+.green p,
+.green .row2,
+.green .row3,
+.green .row4,
+{
+	background:#0e0;
+}
+
+.green a:hover p,
+.green a:hover .row2,
+.green a:hover .row3,
+.green a:hover .row4,
+{
+	background:#0e0;
+}
+
+
+.blue p,
+.blue .row2,
+.blue .row3,
+.blue .row4,
+{
+	background:#0cf;
+}
+
+.blue a:hover p,
+.blue a:hover .row2,
+.blue a:hover .row3,
+.blue a:hover .row4,
+{
+	background:#0cf;
+}
+
+
+</style>
+</head>
+
+<body>
+<ul>
+	<li class="item orange"><a href="#">
+	  <div class="pad"></div>
+	  <div class="row1"></div> <div class="row2"></div>
+	  <div class="row3"></div> <div class="row4"></div>
+	  <p>Home</p>
+	</a>
+	</li>
+	<li class="item yellow"><a href="#">
+	  <div class="pad"></div>
+	  <div class="row1"></div> <div class="row2"></div>
+	  <div class="row3"></div> <div class="row4"></div>
+	  <p>Contact Us</p>
+	</a>
+	</li>
+	<li class="item green"><a href="#">
+	  <div class="pad"></div>
+	  <div class="row1"></div> <div class="row2"></div>
+	  <div class="row3"></div> <div class="row4"></div>
+	  <p>Web Dev</p>
+	</a>
+	</li>
+	<li class="item blue"><a href="#">
+	  <div class="pad"></div>
+	  <div class="row1"></div> <div class="row2"></div>
+	  <div class="row3"></div> <div class="row4"></div>
+	  <p>Map</p>
+	</a>
+	</li>
+</ul>
+</body>
+
+</html>

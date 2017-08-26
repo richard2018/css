@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    	<style>
+
+		#menu ul {
+		  font-family:Arial;
+		  font-size:14px;
+  		  padding:0 0 0 8px; 
+		  margin:0 auto;
+          list-style:none; 
+          height:35px; 
+          white-space:nowrap;
+          }
+		  
+	    #menu ul li {
+		  float:left;
+		  margin:0 2px;
+		  }
+
+	    #menu ul li a{
+		  display:block; 
+		  float:left;
+  		  line-height:35px;
+		  color:#666;
+		  text-decoration:none;
+		  padding:0 0 0 14px;
+		  background:url('background.gif');
+		  }
+
+		  
+		 #menu ul li a b{
+		  display:block;
+		  padding:0 14px 0 0;
+  		  background:url('background.gif') no-repeat right top;
+   		  }
+
+		#menu ul li a:hover{
+		  color:#fff; 
+   		  background: url('background.gif') left center;
+		  }
+		  
+	  	#menu ul li a:hover b{
+		  color:#fff; 
+   		  background: url('background.gif') no-repeat right center;
+	      }
+
+		#menu ul li.current a{
+		  color:#fff; 
+   		  background: url('background.gif') no-repeat left bottom;
+		  }
+
+		#menu ul li.current a b{
+   		  background: url('background.gif') no-repeat right bottom;
+		  }
+
+		#menu ul li.current a:hover{
+   		  background: url('background.gif') no-repeat left bottom;
+   		  cursor:default;
+		  }
+
+		#menu ul li.current a:hover b{
+   		  background: url('background.gif') no-repeat right bottom;
+   		  cursor:default;
+   		  }
+
+
+
+   		</style>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>玻璃效果菜单(2)</title></head>
+
+<body>
+    <div id="menu">
+	<ul>
+	   <li><a href="#"><b> Home </b></a> </li>
+       <li><a href="#"><b> Contact Us </b></a></li>
+       <li><a href="#"><b> Web Dev </b></a></li>
+       <li><a href="#"><b> Web Design </b></a></li>
+       <li class="current"><a href="#"><b> Map </b></a></li>
+	</ul>
+    </div>
+</body>
+</html>
+

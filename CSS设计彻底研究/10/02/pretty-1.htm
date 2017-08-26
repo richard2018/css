@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Book List</title>
+<style type="text/css">
+table {
+	background-color: #FFF;
+	border: none;
+	color: #565;
+	font: 12px arial;
+}
+
+table caption {
+	font-size: 24px;
+	border-bottom: 2px solid #B3DE94;
+	border-top: 2px solid #B3DE94;
+}
+
+table, td, th {
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+	text-align:left;
+}
+
+tbody td, tbody th {
+	background-color: #DFC;
+	border-bottom: 2px solid #B3DE94;
+	border-top: 3px solid #FFFFFF;
+	padding: 9px;
+}
+
+
+tfoot td, tfoot th {
+	font-weight: bold;
+	padding: 4px 8px 6px 9px;
+	text-align:center;
+}
+
+thead th {
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 19px;
+	padding: 0 8px 2px;
+	text-align:center;
+}
+
+tbody tr.odd th,tbody tr.odd td {
+	background-color: #CEA;
+	border-bottom: 2px solid #67BD2A;
+}
+
+td+td+td,
+col.price{
+	text-align:right;
+}
+
+tbody tr:hover td, tbody tr:hover th {
+	background-color: #8b7;
+	color:#fff;
+}
+
+</style>
+</head>
+
+<body>
+		<table summary="book list">
+			<caption>Book List</caption>
+			<col></col><col></col><col></col><col class="price" align="right"></col><col></col>
+			<thead>
+				<tr>
+					<th >Title</th>
+					<th >ID</th>
+
+					<th >Country</th>
+					<th >Price</th>
+					<th >Download</th>
+				</tr>
+			</thead>	
+			<tbody>
+				<tr >
+					<th >Tom</th>
+					<td>1213456</td>
+
+					<td>Germany</td>
+					<td>$3.12</td>
+					<td>Download</td>
+				</tr>
+				<tr class="odd">
+					<th >Chance</th>
+					<td>1213457</td>
+
+					<td>Germany</td>
+					<td>$123.34</td>
+					<td>Download</td>
+				</tr>
+				<tr >
+					<th >John</th>
+					<td>1213458</td>
+
+					<td>Germany</td>
+					<td>$34.37</td>
+					<td>Download</td>
+				</tr>
+				<tr class="odd">
+					<th >oKathleen</th>
+					<td>1213459</td>
+					<td>Germany</td>
+					<td>$23.67</td>
+					<td>Download</td>
+				</tr>
+				</tbody>
+			<tfoot>
+				<tr>
+					<th >Total</th>
+					<td colspan="4">4 books</td>
+				</tr>
+			</tfoot>
+</table>
+</body>
+
+</html>

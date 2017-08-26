@@ -1,0 +1,43 @@
+$blue : #1875e7;　
+div {
+　　color : $blue;
+   font:8px;
+}
+$color : #fff;
+p {
+	@if 1 + 1 < 2 {border: 1px solid;}
+	@if 5 > 3 {border: 2px dotted;}
+	@if lightness($color) > 30% {
+		　background-color: #000;
+	} @else {
+		　background-color: #fff;
+	}
+}
+// for 循环
+@for $i from 1 to 3{
+	.border-#{$i} {
+	　　border: #{$i}px solid blue;
+	}
+}
+
+// while循环
+$i : 3;
+@while $i > 0 {
+　　.item-#{$i} { 
+		width: 2 * $i; 
+	};
+	$i : $i - 1;
+};
+
+@each $member in a, b{
+	.#{$member} {
+		background-image: url("/image/#{$member}.jpg");
+	}
+}
+
+@function double($n) {
+	@return $n * 2;
+}
+#sidebar {
+	width: double(5px);
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>二级菜单</title>
+<style type="text/css">
+
+
+
+/* 整体设置*/ 
+#menu {
+	margin:0; 
+	padding:0;
+	width:610px;
+	list-style-type:none; 
+	font:14px Arial; 
+	}
+
+#menu li {
+	float:left; 
+    padding:0; 
+	margin:0 1px 0 0; 
+	width:150px;
+	}
+
+/* 设置菜单项*/
+#menu li dl { 
+	width:150px;/*ie6*/
+    margin: 0; 
+	padding: 0 0 10px 0; 
+	background: #cb6 url(images/bottom.gif) no-repeat bottom left; 
+	}
+
+#menu li dt a,#menu li dd a{ display:block;}
+
+/* 设置菜单项的dt */
+#menu li dt { 
+	margin:0; 
+    padding: 5px; 
+  	text-align:center;
+	border-bottom:1px solid #b00;
+	background:
+	}
+
+#menu li dt.orange { background:#fa5 url(images/top.gif) no-repeat top left;}
+#menu li dt.yellow { background:#ee5 url(images/top.gif) no-repeat top left;}
+#menu li dt.green  { background:#5e5 url(images/top.gif) no-repeat top left;}
+#menu li dt.blue   { background:#5cf url(images/top.gif) no-repeat top left;}
+
+#menu li dt a ,#menu li dt a:visited {
+	display:block; 
+    color:#333;
+    text-decoration:none;
+	}
+
+/* 设置菜单项的dd */
+#menu li dd { 
+
+	margin:0; 
+    padding:0; 
+	color: #fff; 
+	background: #47a; 
+	}
+
+#menu li dd.last {
+	border-bottom:1px solid #b00;
+	}
+
+#menu li dd a, #menu li dd a:visited {
+	display:block; 
+	color:#fff; 
+    text-decoration:none; 
+	padding:4px 5px 4px 20px;
+    background: #47a url(images/arrow.gif) no-repeat 10px 10px; 
+	height:1em;
+    }
+
+/*关闭子菜单*/
+
+#menu li dd { display:none;}
+
+/* 设置鼠标响应 */
+
+
+
+#menu li:hover dd , #menu li a:hover dd { display:block;}
+
+#menu li:hover, #menu li a:hover { border:0;}/*ie6*/
+
+#menu li dd a:hover {
+	background: #147; 
+    color:#9cf;
+	}
+	
+/*针对ie6的设置*/	
+#menu table { border-collapse:collapse; 
+    padding:0; 
+	margin:-1px; 
+	font-size:1em;
+	}
+	
+	
+</style>
+</head>
+
+<body>
+	<ul id="menu">
+		<li>
+			<a href="#nogo"><table><tr><td>
+			<dl>
+				<dt class="orange"><a href="#">Artech Studio</a></dt>
+				<dd><a href="#">Web Dev</a></dd>
+				<dd><a href="#">Web Design</a></dd>
+				<dd><a href="#">Books</a></dd>
+				<dd class="last"><a href="#">Contact Us</a></dd>
+			</dl>	
+			</td></tr></table></a>
+		</li>
+		<li>
+			<a href="#nogo"><table><tr><td>
+			<dl>
+				<dt class="yellow"><a href="#">Artech Store</a></dt>
+				<dd><a href="#">Books</a></dd>
+				<dd><a href="#">DVDs</a></dd>
+				<dd><a href="#">Movies</a></dd>
+				<dd class="last"><a href="#">Service</a></dd>
+			</dl>	
+			</td></tr></table></a>
+		</li>
+		<li>
+			<a href="#nogo"><table><tr><td>
+			<dl>
+				<dt class="green"><a href="#">Artech Achi</a></dt>
+				<dd><a href="#">Landscape</a></dd>
+				<dd><a href="#">Plan</a></dd>
+				<dd><a href="#">Design</a></dd>
+				<dd class="last"><a href="#">Maps</a></dd>
+			</dl>	
+			</td></tr></table></a>
+		</li>
+		<li>
+			<a href="#nogo"><table><tr><td>
+			<dl>
+				<dt class="blue"><a href="#">Artech Science</a></dt>
+				<dd><a href="#">Physics</a></dd>
+				<dd><a href="#">Maths</a></dd>
+				<dd><a href="#">Chemistry</a></dd>
+				<dd class="last"><a href="#">Courses</a></dd>
+			</dl>	
+			</td></tr></table></a>
+		</li>
+	</ul>
+</body>
+</html>

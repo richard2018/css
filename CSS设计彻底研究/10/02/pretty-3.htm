@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Book List</title>
+<style type="text/css">
+table {
+	color: #565;
+	font: 12px arial;
+}
+
+
+tr{
+	background-color: #beb;
+}	
+
+td {
+	border-bottom: 2px solid #B3DE94;
+	border-top: 3px solid #FFFFFF;
+	padding: 9px;
+}
+
+
+td.hover{
+	background-color: #595;
+	color:#fff;
+}
+
+</style>
+</head>
+
+<body>
+		<table summary="book list">
+			<caption>Book List</caption>
+				<tr >
+					<td >Title</td>
+					<td>ID</td>
+					<td>Contry</td>
+					<td>Price</td>
+					<td>Download</td>
+				</tr>
+
+				<tr >
+					<td >Tom</td>
+					<td>1213456</td>
+
+					<td>Germany</td>
+					<td>$3.12</td>
+					<td>Download</td>
+				</tr>
+				<tr>
+					<td >Chance</td>
+					<td>1213457</td>
+
+					<td>Germany</td>
+					<td>$123.34</td>
+					<td>Download</td>
+				</tr>
+				<tr >
+					<td >John</td>
+					<td>1213458</td>
+
+					<td>Germany</td>
+					<td>$34.37</td>
+					<td>Download</td>
+				</tr>
+				<tr>
+					<td>oKathleen</td>
+					<td>1213459</td>
+					<td>Germany</td>
+					<td>$23.67</td>
+					<td>Download</td>
+				</tr>
+</table>
+
+<script language="javascript">
+var cells = document.getElementsByTagName('td');
+for (var i=0;i<cells.length;i++){
+	cells[i].onmouseover = function(){		//鼠标指针在行上面的时候
+		this.className = 'hover';
+		for (var j=0;j<cells.length;j++)
+			if(cells[j]==this){
+				cells[j%5].className ='hover';
+				cells[j-j%5].className ='hover';
+							}
+	}
+	cells[i].onmouseout = function(){		//鼠标指针离开时
+		this.className = '';
+		for (var j=0;j<cells.length;j++)
+			if(cells[j]==this){
+				cells[j%5].className ='';
+				cells[j-j%5].className ='';
+							}
+
+	}
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>5背景图可变宽圆角框</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css" media="screen">
+body {
+background: #FFF;
+font: 13px/1.5 Arial;
+margin:0;
+padding:0;
+}
+
+.rounded {
+  background: 
+	url(images-dark/left-top.gif)
+  top left no-repeat;
+  }
+.rounded h2 {
+  background: 
+	url(images-dark/right-top.gif) 
+  top right no-repeat;
+  padding:20px 20px 10px;
+  margin:0;
+  
+  }
+.rounded .main {
+  background: 
+	url(images-dark/right.gif) 
+  top right repeat-y;
+  padding:10px 20px;
+    margin:-2em 0 0 0;
+      }
+.rounded .footer {
+  background: 
+	url(images-dark/left-bottom.gif) 
+  bottom left no-repeat;
+  }
+.rounded .footer p {
+  background:url(images-dark/right-bottom.gif) bottom right no-repeat;
+  display:block;
+  padding:10px 20px 20px;
+  margin:-2em 0 0 0;
+  
+  }
+  
+ #header,#pagefooter{margin:0 auto;
+ width:760px;} 
+
+#container{
+	position:relative;
+	margin:0 auto;
+	width:760px;
+	}
+
+  
+
+#wide{
+position:absolute;
+top:0;
+left:0;
+width:500px;
+}
+
+#side{
+position:relative;
+margin:0 0 0 500px;
+}
+
+
+</style>
+</head>
+<body>
+<div id="header" class="rounded">
+		<h2>Page Header</h2>
+		
+		<div class="main">
+
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。<br />
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+			
+		</div>
+
+		
+		<div class="footer">
+		<p>
+		这是版权信息文字。
+		</p> 
+		</div>
+	</div>
+	
+<div id="container">
+	
+	<div id="wide" class="rounded">
+		<h2>Main Content</h2>
+		
+		<div class="main">
+
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。<br />
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+			
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。<br />
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+		</div>
+
+		
+		<div class="footer">
+		<p>
+		这是版权信息文字。
+		</p> 
+		</div>
+	</div>
+
+	<div id="side" class="rounded">
+		<h2>Side Bar</h2>
+		
+		<div class="main">
+
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。<br />
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+			
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。<br />
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+		</div>
+
+		
+		<div class="footer">
+		<p>
+		这是版权信息文字。
+		</p> 
+		</div>
+	</div>
+
+</div>
+<div id="pagefooter" class="rounded">
+		<h2>Page Footer</h2>
+		
+		<div class="main">
+
+		<p>
+		这是一行文本，这里作为样例，显示在圆角框。
+		</p>
+			
+		</div>
+
+		
+		<div class="footer">
+		<p>
+		这是版权信息文字。
+		</p> 
+		</div>
+	</div>
+
+</body>
+</html>
