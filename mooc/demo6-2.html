@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <title>伪类选择器 :not</title>
+    <script type='text/javascript'>
+    // 伪类选择器 :not
+    </script>
+    <style type="text/css">
+        form {
+            width: 200px;
+            margin: 20px auto;
+        }
+
+        div {
+            margin-bottom: 20px;
+        }
+
+        input:not([type="submit"]) {
+            border: 1px solid red;
+        }
+    </style>
+
+    <head>
+
+        <body>
+            <form action="#">
+                <div>
+                    <label for="name">Text Input:</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith" />
+                </div>
+                <div>
+                    <label for="name">Password Input:</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith" />
+                </div>
+                <div>
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </body>
+
+</html>

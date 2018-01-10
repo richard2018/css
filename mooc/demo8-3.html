@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS生成内容</title>
+    <style type='text/css'>
+        h1:before {
+            content: "我是被插进来的";
+            color: red;
+        }
+
+        h1:after {
+            content: "我是被插进来的";
+            color: red;
+        }
+        a:after {                       
+            content: attr(title);
+            color: #f00;
+        }
+        a:before {
+            content: url("https://gd2.alicdn.com/imgextra/i2/0/TB1nwGEFVXXXXaHXpXXXXXXXXXX_!!0-item_pic.jpg_200x200.jpg")
+        }
+    </style>
+</head>
+
+<body>
+    <h1>我是标题，在我前面插入内容吧</h1>
+    <a href="##" title="我是一个title属性值，我插在你的后面">我是元素</a>
+</body>
+
+</html>

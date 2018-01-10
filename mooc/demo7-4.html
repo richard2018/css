@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>变形与动画</title>
+    <style type='text/css'>
+        @keyframes wobble {
+            0% {
+                margin-left: 100px;
+                background: green;
+            }
+            40% {
+                margin-left: 150px;
+                background: orange;
+            }
+            60% {
+                margin-left: 75px;
+                background: blue;
+            }
+            100% {
+                margin-left: 400px;
+                background: red;
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background: red;
+            color: #fff;
+        }
+
+        div:hover {
+            animation: wobble 10s ease .1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>鼠标放在我身上</div>
+
+</body>
+
+</html>

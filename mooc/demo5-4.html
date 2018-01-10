@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>多重背景</title>
+    <style type="text/css">
+        .demo {
+            width: 300px;
+            height: 140px;
+            border: 1px solid #999;
+
+            background-image: url(http://img.mukewang.com/54cf2365000140e600740095.jpg),
+            url(http://img.mukewang.com/54cf238a0001728d00740095.jpg),
+            url(http://img.mukewang.com/54cf23b60001fd9700740096.jpg);
+            background-position: left top, 100px 0, 200px 0;
+            background-repeat: no-repeat, no-repeat, no-repeat;
+
+            margin: 0 0 20px 0;
+        }
+
+        .task {
+            width: 300px;
+            height: 140px;
+            border: 1px solid #999;
+
+            background: url(http://static.mukewang.com/static/img/logo_index.png) no-repeat,
+            url(http://static.mukewang.com/static/img/logo_index.png) no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo"></div>
+    <div class="task"></div>
+</body>
+
+</html>

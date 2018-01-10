@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>结构性伪类选择器—empty</title>
+    <style type="text/css">
+        p {
+            background: orange;
+            min-height: 30px;
+        }
+
+        p:empty {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p>我是一个段落</p>
+    <p></p>
+    <p></p>​
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>结构性伪类选择器—target</title>
+    <style type="text/css">
+        #brand:target {
+            background: orange;
+            color: #fff;
+        }
+
+        #jake:target {
+            background: blue;
+            color: #fff;
+        }
+
+        #aron:target {
+            background: red;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <h2><a href="#brand">Brand</a></h2>
+    <div class="menuSection" id="brand">
+        content for Brand
+    </div>
+    <h2><a href="#jake">Brand</a></h2>
+    <div class="menuSection" id="jake">
+        content for jake
+    </div>
+    <h2><a href="#aron">Brand</a></h2>
+    <div class="menuSection" id="aron">
+        content for aron
+    </div>
+</body>
+
+</html>

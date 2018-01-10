@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>结构性伪类选择器—first-child</title>
+    <style type='text/css'>
+        ol > li{ 
+            font-size:20px; 
+            font-weight: bold; 
+            margin-bottom: 10px; 
+        } 
+        ol a { 
+            font-size: 16px; 
+            font-weight: normal; 
+        } 
+        ol > li:first-child{
+            color: #141010; 
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li><a href="##">Link1</a></li>
+        <li><a href="##">Link2</a></li>
+        <li><a href="##">link3</a></li>
+    </ol>
+</body>
+
+</html>

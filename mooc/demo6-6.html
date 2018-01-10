@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>::selection选择器</title>
+    <style type='text/css'>
+         ::-moz-selection {
+            background: red;
+            color: green;
+        }
+
+        ::selection {
+            background: red;
+            color: yellow;
+        }
+    </style>
+
+    ::-moz-selection { background: red; color: green; } ::selection { background: red; color: green; }
+</head>
+
+<body>
+    <p>“::selection”伪元素是用来匹配突出显示的文本。浏览器默认情况下，选择网站文本是深蓝的背景，白色的字体， 有的设计要求不使用上图那种浏览器默认的突出文本效果，需要一个与众不同的效果，此时“::selection”伪元素就非常的实用。不过在Firefox浏览器还需要添加前缀。
+    </p>
+</body>
+
+</html>

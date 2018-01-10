@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>属性选择器</title>
+<style type="text/css">
+a[class^=icon]{
+  background: green;
+  color:#fff;
+}
+a[href$=pdf]{
+  background: orange;
+  color: #fff;
+}
+a[title*=more]{
+  background: blue;
+  color: #fff;
+}
+</style>
+</head> 
+<body>
+        <a href="xxx.pdf">我链接的是PDF文件</a>
+        <a href="#" class="icon">我类名是icon</a>
+        <a href="#" title="我的title是more">我的title是more</a>
+</body>
+</html>
