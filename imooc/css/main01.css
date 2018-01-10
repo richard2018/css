@@ -128,3 +128,131 @@ body {
     border: 1px solid #FFF;
     padding-right: 25px;
 }
+
+
+.main {
+    height: 250px;
+    margin-top: 5px;
+    background-color: #FFF;
+}
+
+.news {
+    width: 340px;
+}
+.products {
+    width: 410px;
+    margin: 0 7px;
+}
+.news, .products {
+    float: left;
+    height: 250px;
+    border: 1px solid #E8E8E8;
+}
+
+.title {
+    height:  35px;
+    border-bottom: 2px solid #E8E8E8;
+    font-size: 14px;
+    font-family: 'Î¢ÈíÑÅºÚ';
+    line-height: 35px;
+    font-weight: bold;
+}
+.title_left {
+    width: 70%;
+    float: left;
+    padding-left: 20px;
+}
+
+.title_right {
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+
+.title_right a {
+	color: #999;
+	text-decoration: none;
+	font-family: "ËÎÌå";
+	font-size: 10px;
+	font-weight: normal;
+	padding-right: 10px;
+}
+
+.pic_news {
+	height: 80px;
+	margin-top: 10px;
+	line-height: 22px;
+}
+
+.pic_news img, .product_list img {
+	float: left;
+	margin: 0 5px;
+}
+.pic_news a, .product_list a {
+	color: #C00;
+	text-decoration: none;
+}
+.red {
+	color: #C00;
+	font-weight: bold;
+}
+.news_list {
+	margin-top: 20px;
+}
+.news_list li {
+	background: url(../images/list.jpg) no-repeat;
+	list-style-type: none;
+	padding-left: 10px;
+	margin: 8px;
+	border-bottom: 1px dotted #CCC;
+	height: 17px;
+	line-height: 17px;
+}
+.news_list span {
+	float: right;
+	color: #999;
+}
+.news_list a:link, .news_list a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.news_list a:hover, .news_list a:active {
+	color: #F00;
+	text-decoration: none;
+}
+
+
+
+/** products **/
+.product_list {
+	height: 120px;
+	margin-top: 10px;
+	line-height: 22px;
+}
+.product_type {
+	width: 372px;
+	height: 37px;
+	background: url(../images/product_type_bg.jpg) no-repeat;
+	margin: 20px auto;
+}
+.product_type li {
+	list-style-type: none;
+	float: left;
+	line-height: 37px;
+	text-align: center;
+	margin: 0 15px;
+}
+
+.video {
+	height: 185px;
+	margin-bottom: 10px;
+	border: 1px solid #E8E8E8;
+}
+.video_content {
+	height: 150px;
+}
+.service {
+	height: 55px;
+	border: 1px solid #E8E8E8;
+}
+
