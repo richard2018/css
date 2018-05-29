@@ -1,0 +1,433 @@
+/* 交河故城 */
+body{
+	background:url(body_bg.jpg) repeat-y center;	/* 页面的两条竖线 */
+	background-color:#000000;
+	margin: 0px;
+	padding:0px;
+	text-align:center;
+}
+#container{											/* 固定宽度且居中的版式 */
+	position:relative;
+	margin:0px auto 0px auto;
+	width:800px;
+	text-align:left;
+	background:url(container_bg.jpg) no-repeat bottom right;
+	/* 底部右侧的背景图片 */
+}
+#globallink{
+	width:800px;
+	height:430px;
+	margin:0px;
+	background-image:url(banner.jpg);
+	background-repeat:no-repeat;
+	font-size:12px;
+	padding-bottom:0px;
+}
+#globallink ul{
+    list-style-type:none;
+	position:absolute;				/* 绝对定位 */
+	display:block;
+	left:761px;
+	top:58px;
+	padding:0px; margin:0px;
+}
+#globallink li{
+	text-align:center;
+	padding-top:18px;
+	width:30px;
+}
+#globallink a:link, #globallink a:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#globallink a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+
+#parameter{
+	position:relative;
+	float:left;									/* 左浮动 */
+	font-size:12px;
+	width:190px;								/* 固定宽度 */
+	padding:0px 6px 20px 0px;
+	margin-top:-88px;							/* 向左移动出去 */
+	color:#bb9d80;
+	background:url(parabottom.jpg) no-repeat bottom;	/* 下部圆角 */
+	background-color:#3e3226;
+}
+#parameter h3 span{
+	display:none;
+}
+#parameter h3{
+	height:28px; width:190px;
+	padding:0px; margin:0px;
+}
+#parameter br{
+	clear:both;
+	display:none;
+}
+#parameter div{
+	margin-bottom:22px;
+}
+#parameter a:link, #parameter a:visited{
+	color:#c2b2a2;
+	text-decoration:none;
+}
+#parameter a:hover{
+	color:#FFFF00;
+	text-decoration:none;
+}
+#parameter a.author1:link{
+	color:#d8924d;
+	font-size:12px;
+	text-decoration:none;
+}
+#parameter a.author1:visited{
+	color:#b37941;
+	font-size:12px;
+	text-decoration:none;
+}
+#parameter a.author1:hover{
+	color:#74b8ff;
+	font-size:12px;
+	text-decoration:none;
+}
+#lstatistics h3{
+	height:0px;
+}
+#lhotblog h3{
+	background:url(lhotblog.jpg) no-repeat;
+}
+#lrecent h3{
+	background:url(lrecent.jpg) no-repeat;
+}
+#lapply h3{
+	background:url(lapply.jpg) no-repeat;
+}
+#lhotblog span a, #lrecent span a, #lapply span a{
+	float:right;
+	text-align:right;
+	padding-top:8px;
+	padding-right:8px;
+	margin-bottom:5px;
+}
+#lstatistics, #lhotblog, #lrecent, #lapply{
+	position:relative;
+	clear:both;
+}
+#lstatistics ul, #lhotblog ul, #lrecent ul, #lapply ul{
+	list-style-type:none;
+	padding-top:12px;
+	padding-left:10px;
+	padding-right:5px;
+	margin:0px;
+}
+#lstatistics li{
+	text-align:left;
+	padding-left:18px;
+	line-height:18px;
+	background:url(arrow1.gif) no-repeat 7px 5px;
+}
+#lhotblog li{
+	text-align:left;
+	padding-left:16px;
+	line-height:17px;
+	background:url(arrow2.gif) no-repeat 7px 6px;
+}
+#lrecent li, #lapply li{
+	text-align:left;
+	padding-left:16px;
+	line-height:17px;
+	background:url(arrow3.gif) no-repeat 7px 6px;
+}
+
+#mainsupport{
+	float:left;
+	position:relative;
+	color:#c86615;
+	font-size:12px;
+	margin:10px 20px 0px 20px;
+	padding-left:12px;
+	width:510px;
+}
+#mainsupport h3 span,#mainsupport h3{
+	display:none;
+}
+#mainsupport li a:link, #mainsupport li a:visited{
+	color:#ddaf80;
+	font-size:12px;
+	text-decoration:none;
+}
+#mainsupport li a:hover{
+	color:#BBAA00;
+	font-size:12px;
+	text-decoration:none;
+}
+#mainsupport li a.author2:link{
+	color:#cb9a32;
+	font-size:12px;
+	text-decoration:none;
+}
+#mainsupport li a.author2:visited{
+	color:#cb9a32;
+	font-size:12px;
+	text-decoration:none;
+}
+#mainsupport li a.author2:hover{
+	color:#8a8a8a;
+	font-size:12px;
+	text-decoration:underline;
+}
+#recommendblog br, #currenttime br, #blogsearch br,#logoin br{
+	display:none;
+	clear:both;
+}
+#recommendblog{
+	height:140px;
+	background:url(recommendblog.jpg) no-repeat;
+	margin:0px;
+	padding-top:15px;
+	padding-bottom:0px;
+	padding-left:125px;
+}
+#recommendblog ul{
+	margin-top:8px;
+	margin-left:0px;
+	margin-bottom:0px;
+	padding-top:10px;
+	padding-left:10px;
+	list-style-type:none;
+}
+#recommendblog li{
+	padding-left:20px;
+	line-height:19px;
+	background:url(arrow4.gif) no-repeat 5px 6px;
+}
+#recommendblog span a:link, #recommendblog span a:visited{
+	color:#c87e2e;
+	text-decoration:none;
+	padding-left:10px;
+	font-weight:bold;
+}
+#recommendblog span a:hover{
+	color:#CCCC00;
+	text-decoration:underline;
+	padding-left:10px;
+	font-weight:bold;
+}
+#recommendblog span a.author2{
+	font-weight:lighter;
+}
+#recommendblog span a.author2:link{
+	color:#d5503f;
+	text-decoration:none;
+}
+#recommendblog span a.author2:visited{
+	color:#d5503f;
+	text-decoration:none;
+	font-weight:lighter;
+}
+#recommendblog span a.author2:hover{
+	color:#BBCC44;
+	text-decoration:underline;
+	font-weight:lighter;
+}
+#currenttime{
+	height:50px;
+	margin-top:12px;
+	padding-top:16px;
+	padding-left:5px;
+	background:url(currenttime.jpg) no-repeat;
+}
+#currenttime p.p1{
+	color:#93c8ff;
+	margin:0px;
+	padding-left:15px;
+	padding-right:10px;
+	display:inline;
+}
+#currenttime p.p2{
+	color:#57b6ff;
+	margin:0px;
+	padding-left:0px;
+	padding-right:0px;
+	display:inline;
+}
+#currenttime p a.astro:link, #currenttime p a.astro:visited{
+	color:#76c7ff;
+	font-size:12px;
+	text-decoration:none;
+}
+#currenttime p a.astro:hover{
+	color:#DDDD00;
+	font-size:12px;
+	text-decoration:underline;
+}
+#currenttime ul{
+	padding-left:10px;
+	padding-right:8px;
+	text-align:center;
+	margin:0px;
+	list-style-type:none;
+}
+#currenttime li{
+	float:left;
+	width:17px;
+	line-height:20px;
+}
+form{
+	padding:0px;
+	margin:0px;
+}
+input{
+	margin:0px; padding:0px;
+}
+#blogsearch{
+	margin:0px;
+	height:30px;
+}
+#blogsearch ul{
+	margin:0px;
+	padding-left:10px;
+	padding-top:4px;
+	list-style-type:none;
+	text-align:left;
+}
+#blogsearch li{
+	float:left;
+	line-height:22px;
+}
+#blogsearch li#sear1 input{
+	background-color:#000000;
+	border:1px solid #c86615;
+	color:#c86615;
+	font-size:12px;
+	height:15px;
+	padding:0px;
+	margin-right:8px;
+}
+#blogsearch #sear3 input,#blogsearch #sear4 input,#blogsearch #sear5 input{
+	margin-left:5px;
+}
+#blogsearch #sear6 input{
+	background-color:#000000;
+	border:1px solid #c86615;
+	color:#c86615;
+	font-size:12px;
+	height:17px;
+	padding:0px;
+	margin-left:8px;
+	margin-top:2px;
+	margin-bottom:0px;
+}
+#logoin{
+	margin:0px;
+	height:65px;
+	background:url(manyboard.jpg) no-repeat;
+}
+#logoin ul#per{
+	margin:0px;
+	padding-left:15px;
+	padding-top:15px;
+	list-style-type:none;
+	text-align:left;
+}
+#logoin ul#per li{
+	padding-left:20px;
+	line-height:20px;
+	margin:0px;
+	background:url(arrow5.gif) no-repeat 6px 5px;
+}
+#logoin #per input{
+	background-color:#000000;
+	border:1px solid #c86615;
+	color:#c86615;
+	font-size:12px;
+	height:15px;
+	padding:0px;
+}
+#logoin #per1 input.textinput1,#logoin #per2 input.textinput2{
+	background-color:#000000;
+	border:1px solid #c86615;
+	color:#c86615;
+	font-size:12px;
+	height:14px;
+	padding:0px;
+	width:120px;
+	FONT-FAMILY: "Tahoma","SimSun","Arial", "Helvetica", "sans-serif";
+}
+#recommendart br, #newnode br{
+	clear:both;
+	display:none;
+}
+#recommendart{
+	background:url(recommendart.jpg) no-repeat;
+	padding:0px;
+	margin-top:10px;
+}
+#recommendart ul{
+	list-style-type:none;
+	padding-top:75px;
+	padding-bottom:0px;
+	padding-left:5px;
+	padding-right:5px;
+	margin:0px;
+}
+#recommendart li{
+	line-height:18px;
+	padding-left:15px;
+	padding-right:0px;
+	background:url(arrow6.gif) no-repeat 0px 5px;
+}
+#newnode ul{
+	padding-left:73px;
+	padding-right:5px;
+	padding-bottom:0px;
+	padding-top:5px;
+	text-align:left;
+	margin:0px;
+	list-style-type:none;
+}
+#newnode li{
+	line-height:18px;
+	padding-left:15px;	
+	background:url(arrow6.gif) no-repeat 0px 5px;
+}
+#newnode{
+	background:url(newnode.jpg) no-repeat;
+	padding:0px;
+	margin-top:15px; margin-bottom:20px;
+}
+
+#footer{
+	position:relative;
+	clear:both;
+	background:url(footer_bg.jpg) no-repeat;
+	font-size:12px;
+	height:44px;
+	text-align:center;
+	color:#C2C299;
+	margin:0px;
+	padding-top:16px;
+}
+#footer p{
+	margin:0px;
+	padding:0px;
+	line-height:20px;
+}
+#footer a:link{
+	color:#D3D388;
+	font-size:12px;
+	text-decoration:none;
+}
+#footer a:visited{
+	color:#D3D388;
+	font-size:12px;
+	text-decoration:none;
+}
+#footer a:hover{
+	color:#222222;
+	font-size:12px;
+	text-decoration:none;
+}

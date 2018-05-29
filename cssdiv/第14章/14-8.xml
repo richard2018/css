@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/css" href="14-8.css"?>
+<list>
+	<caption>Member List</caption>
+	<title>
+		<name>Name</name>
+		<class>Class</class>
+		<birth>Birthday</birth>
+		<constell>Constellation</constell>
+		<mobile>Mobile</mobile>
+	</title>
+	<student>
+		<name>isaac</name>
+		<class>W13</class>
+		<birth>Jun 24th</birth>
+		<constell>Cancer</constell>
+		<mobile>1118159</mobile>
+	</student>
+	<student class="altrow">
+		<name>girlwing</name>
+		<class>W210</class>
+		<birth>Sep 16th</birth>
+		<constell>Virgo</constell>
+		<mobile>1307994</mobile>
+	</student>
+	<student>
+		<name>tastestory</name>
+		<class>W15</class>
+		<birth>Nov 29th</birth>
+		<constell>Sagittarius</constell>
+		<mobile>1095245</mobile>
+	</student>
+	<student class="altrow">
+		<name>lovehate</name>
+		<class>W47</class>
+		<birth>Sep 5th</birth>
+		<constell>Virgo</constell>
+		<mobile>6098017</mobile>
+	</student>
+	<student>
+		<name>slepox</name>
+		<class>W19</class>
+		<birth>Nov 18th</birth>
+		<constell>Scorpio</constell>
+		<mobile>0658635</mobile>
+	</student>
+	<student class="altrow">
+		<name>smartlau</name>
+		<class>W19</class>
+		<birth>Dec 30th</birth>
+		<constell>Capricorn</constell>
+		<mobile>0006621</mobile>
+	</student>
+	<student>
+		<name>whaler</name>
+		<class>W19</class>
+		<birth>Jan 18th</birth>
+		<constell>Capricorn</constell>
+		<mobile>1851918</mobile>
+	</student>
+	<student class="altrow">
+		<name>shenhuanyan</name>
+		<class>W25</class>
+		<birth>Jan 31th</birth>
+		<constell>Aquarius</constell>
+		<mobile>0621827</mobile>
+	</student>
+	<student>
+		<name>tuonene</name>
+		<class>W210</class>
+		<birth>Nov 26th</birth>
+		<constell>Sagittarius</constell>
+		<mobile>0091704</mobile>
+	</student>
+	<student class="altrow">
+		<name>ArthurRivers</name>
+		<class>W91</class>
+		<birth>Feb 26th</birth>
+		<constell>Pisces</constell>
+		<mobile>0468357</mobile>
+	</student>
+	<student>
+		<name>reconzansp</name>
+		<class>W09</class>
+		<birth>Oct 13th</birth>
+		<constell>Libra</constell>
+		<mobile>3643041</mobile>
+	</student>
+	<student class="altrow">
+		<name>linear</name>
+		<class>W86</class>
+		<birth>Aug 18th</birth>
+		<constell>Leo</constell>
+		<mobile>6398341</mobile>
+	</student>
+	<student>
+		<name>laopiao</name>
+		<class>W41</class>
+		<birth>May 17th</birth>
+		<constell>Taurus</constell>
+		<mobile>1254004</mobile>
+	</student>
+	<student class="altrow">
+		<name>dovecho</name>
+		<class>W19</class>
+		<birth>Dec 9th</birth>
+		<constell>Sagittarius</constell>
+		<mobile>1892013</mobile>
+	</student>
+	<student>
+		<name>shanghen</name>
+		<class>W42</class>
+		<birth>May 24th</birth>
+		<constell>Gemini</constell>
+		<mobile>1544254</mobile>
+	</student>
+	<student class="altrow">
+		<name>venessawj</name>
+		<class>W45</class>
+		<birth>Apr 1st</birth>
+		<constell>Aries</constell>
+		<mobile>1523753</mobile>
+	</student>
+	<student>
+		<name>lightyear</name>
+		<class>W311</class>
+		<birth>Mar 23th</birth>
+		<constell>Aries</constell>
+		<mobile>1002908</mobile>
+	</student>
+</list>

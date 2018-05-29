@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="gb2312"?>
+<computor bit="32">
+	<mainboard brand="ASUS" price="expensive" />
+	<harddisk brand="IBM">240G</harddisk>
+	<user name="isaac"></user>
+	<!-- mainboard与user均为空标记 -->
+</computor>

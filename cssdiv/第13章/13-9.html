@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>图片淡入淡出</title>
+<style type="text/css">
+<!--
+body{
+	background:#000000;
+}
+img{
+	filter:BlendTrans(duration=3);
+	border:none;
+}
+-->
+</style>
+   </head>
+<body>
+<script language="javascript">
+function img1(x){    // 获取数组记录数
+	this.length=x;
+}
+//申明数组并给数组元素赋值，也就是把图片的相对路径保存起来
+//若是图片较多，可增加数组元素的个数，
+//在这个例子中用了五张图片，所以数组元素个数为“5"。 
+	iname=new img1(5);
+	iname[0]="photo/01.jpg";
+	iname[1]="photo/02.jpg";
+	iname[2]="photo/03.jpg";
+	iname[3]="photo/04.jpg";
+	iname[4]="photo/05.jpg";
+	var i=0;
+function play1(){				// 演示变换效果
+	if (i==4){ i=0; }			//当进行到iname[4]时，返回iname[0]
+	else{ i++; }
+	tp1.filters[0].apply();		//tp为图像的name，在<img>标记中定义
+	tp1.src=iname[i];
+	tp1.filters[0].play();
+	mytimeout=setTimeout("play1()",4000);
+	//设置演示时间，这里是以毫秒为单位的，所以“4000 ”是指每张图片的演示时间是4秒
+	//这个时间值要大于滤镜中设置的转换时间值，这样当转换结束后还能停留一段时间，看清楚图片。
+}
+</script>
+<p><img src="photo/04.jpg" name="tp1"></p>
+<script language="javascript">//play1();</script>
+</body>

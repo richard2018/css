@@ -1,0 +1,80 @@
+body{
+	background-color:#2a3a00;
+	margin: 0px;
+	padding:0px;
+	text-align:center;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#container{
+	position:relative;
+	margin:1px auto 0px auto;
+	width:640px;
+	text-align:left;
+	background:#FFFFFF url(left_bg.jpg) repeat-y;
+	/* 修补#navigation的背景色问题 */
+}
+
+#navigation {
+	width:150px;
+	float:left;							/* 左浮动 */
+}
+
+#navigation ul {
+	list-style-type:none;				/* 不显示项目符号 */
+	margin:0px;
+	padding:0px;
+}
+#navigation li {
+	border-bottom:1px solid #b9ff00;	/* 添加下划线 */
+}
+#navigation li a{
+	display:block;						/* 区块显示 */
+	padding:5px 5px 5px 0.5em;
+	text-decoration:none;
+	border-left:12px solid #3c5300;		/* 左边的粗红边 */
+	border-right:1px solid #3c5300;		/* 右侧阴影 */
+}
+#navigation li a:link, #navigation li a:visited{
+	background-color:#729e00;
+	color:#FFFFFF;
+}
+#navigation li a:hover{					/* 鼠标经过时 */
+	background-color:#587a00;			/* 改变背景色 */
+	color:#ffff00;						/* 改变文字颜色 */
+}
+
+#text{
+	float:left;
+	width:460px;
+	margin:10px 15px 35px 15px;
+}
+#text h3{
+	font-size:15px;
+	margin:0px 0px 10px 0px;
+	padding:10px 0px 1px 0px;
+	border-bottom:1px dotted #777777;	/* 下划点线 */
+}
+#text a:link, #text a:visited{
+	color:#afcd00;
+	text-decoration:none;
+}
+#text a:hover{
+	color:#000000;
+	text-decoration:underline;
+}
+
+#footer{
+	clear:both;
+	text-align:center;
+	background-color:#c7db51;
+	margin:0px; padding:1px;
+}
+#footer a:link, #footer a:visited{
+	color:#475300;
+	text-decoration:none;
+}
+#footer a:hover{
+	color:#000000;
+	text-decoration:line-through;
+}

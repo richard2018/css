@@ -1,0 +1,78 @@
+body{
+	margin:0.8em;
+	padding:0px;
+}
+div.pic{
+	width:450px; height:160px;			/* 块的大小 */
+	margin:6px;
+	padding:0px;
+}
+div.pic img{
+	border:1px solid #82c3ff;
+}
+div.pic a.tn{
+	float:left;							/* 超链接全部环绕 */
+}
+div.ls{
+	background:url(framels.jpg) no-repeat left;	/* 水平相片的背景 */
+}
+div.pt{
+	background:url(framept.jpg) no-repeat left;	/* 竖直相片的背景 */
+}
+div.ls img{										/* 水平相片 */
+	margin:0px;
+	height:90px; width:135px;
+}
+div.pt img{										/* 竖直相片 */
+	margin:0px;
+	height:135px; width:90px;
+}
+div.ls a{
+	display:block;
+	padding:34px 14px 36px 11px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.pt a{
+	display:block;
+	padding:11px 36px 14px 34px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.ls a:hover{
+	background:url(framels_hover.jpg) no-repeat center;
+}
+div.pt a:hover{
+	background:url(framept_hover.jpg) no-repeat center;
+}
+div.pic ul{							/* 设置相片信息的样式 */
+	margin:3px 0 0 170px;
+	padding:0 0 0 0.5em;
+	background:#dceeff;
+	border:2px solid #a7d5ff;
+	font-size:12px;
+	list-style:none;
+	font-family:Arial, Helvetica, sans-serif;
+}
+div.pic li{
+	line-height:1.2em;
+	margin:0;
+	padding:0;
+}
+div.pic li.title{	
+	font-weight:bold;
+	padding-top:0.4em;
+	padding-bottom:0.2em;
+	border-bottom:1px solid #a7d5ff;
+	color:#004586;
+}
+div.pic li.catno{
+	color:#0068c9;
+	margin:0 2px 0 13em;
+	padding-left:5px;
+	border-left:1px solid #a7d5ff;	
+}
+div.pic li.price{
+	color:#0068c9;
+	font-style:italic;
+	margin:-1.2em 2px 0 18em;
+	padding-left:5px;
+	border-left:1px solid #a7d5ff;
+	float:left;
+}

@@ -1,0 +1,26 @@
+shadow{
+	font-family:Arial;
+	font-size:80px;
+	font-weight:bold;
+}
+char1{
+	position:absolute;	/* 绝对定位 */
+	/*color:#003765;*/
+	color:#FFFF00;
+	top:10px;
+	left:15px;
+	z-index:2;			/* 高低关系 */
+	border:2px solid #222222;
+	padding:0px 10px 0px 10px;
+}
+char2{
+	position:absolute;	/* 绝对定位 */
+	top:15px;
+	left:20px;
+	/*color:#9A9A9A;*/
+	color:#ff0000;
+	z-index:1;			/* 高低关系 */
+	padding:0px 10px 0px 10px;
+	/*background-color:#d2eaff;*/
+	background-color:#7c0000;
+}

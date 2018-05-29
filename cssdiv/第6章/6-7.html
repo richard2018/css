@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>表单</title>
+<style>
+<!--
+form {
+	border: 1px dotted #AAAAAA;
+	padding: 3px 6px 3px 6px;
+	margin:0px;
+	font:14px Arial;
+}
+input {
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+select {
+	width: 80px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+textarea {
+	width: 200px;
+	height: 40px;
+	color: #00008B;
+	background-color: #ADD8E6;
+	border: 1px solid #00008B;
+}
+-->
+</style>
+   </head>
+<body>
+<form method="post">
+<p>请输入您的姓名:<br><input type="text" name="name" id="name"></p>
+<p>请选择你最喜欢的颜色:<br>
+<select name="color" id="color">
+	<option value="red">红</option>
+	<option value="green">绿</option>
+	<option value="blue">蓝</option>
+	<option value="yellow">黄</option>
+	<option value="cyan">青</option>
+	<option value="purple">紫</option>
+</select></p>
+<p>请问你的性别:<br>
+	<input type="radio" name="sex" id="male" value="male">男<br>
+	<input type="radio" name="sex" id="female" value="female">女</p>
+<p>你喜欢做些什么:<br>
+	<input type="checkbox" name="hobby" id="book" value="book">看书
+	<input type="checkbox" name="hobby" id="net" value="net">上网
+	<input type="checkbox" name="hobby" id="sleep" value="sleep">睡觉</p>
+<p>我要留言:<br><textarea name="comments" id="comments" cols="30" rows="4"></textarea></p>
+<p><input type="submit" name="btnSubmit" id="btnSubmit" value="Submit"></p>
+</form>
+</body>
+</html>

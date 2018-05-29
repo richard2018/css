@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>文字下划线、顶划线、删除线</title>
+<style>
+<!--
+p.one{ text-decoration:underline overline; }				/* 下划线+顶划线 */
+p.two{ text-decoration:underline line-through; }			/* 下划线+删除线 */
+p.three{ text-decoration:overline line-through; }			/* 顶划线+删除线 */
+p.four{ text-decoration:underline overline line-through; }		/* 三种同时 */
+-->
+</style>
+   </head>
+
+<body>	
+	<p>正常文字对比</p>
+	<p class="one">下划线文字，顶划线文字</p>
+	<p class="two">下划线文字，删除线文字</p>
+	<p class="three">顶划线文字，删除线文字</p>
+	<p class="four">三种效果同时</p>
+</body>
+</html>

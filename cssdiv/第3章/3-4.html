@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>文字大小_相对值</title>
+<style>
+<!--
+p.one{
+	font-size:15px;		/* 象素，因此实际显示大小与分辨率有关，很常用的方式 */
+}
+p.one span{
+	font-size:200%;		/* 在父标记的基础上200% */
+}
+p.two{
+	font-size:30px;
+}
+p.two span{
+	font-size: 0.5em;	/* 在父标记的基础上×0.5 */
+}
+-->
+</style>
+   </head>
+
+<body>
+	<p class="one">文字大小<span>相对值</span>，15px。</p>
+	<p class="two">文字大小<span>相对值</span>，30px。</p>
+</body>
+</html>

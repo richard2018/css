@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="gb2312"?>
+<?xml-stylesheet type="text/css" href="14-5.css"?>
+<!DOCTYPE hello[
+	<!ELEMENT hello (#PCDATA)>
+]>
+<hello>Hello World!</hello>

@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>文字颜色</title>
+<style type="text/css">
+<!--
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+}
+form{padding:0px;margin:0px;}
+input{
+	border:1px solid #000000;
+	width:40px;
+}
+input.btn{width:60px; height:18px;}
+span{font-family:黑体;font-size:60px; font-weight:bold;}
+-->
+</style>
+<script language="javascript">
+function ChangeColor(){
+	var red = document.colorform.red.value;		//获得各个输入框的值
+	var green = document.colorform.green.value;
+	var blue = document.colorform.blue.value;
+	var obj = document.getElementById("text");
+	obj.style.color="#"+red+green+blue;			//修改文字颜色
+}
+</script>
+   </head>
+<body>
+<form name="colorform">
+	R:<input name="red" maxlength="2">
+	G:<input name="green" maxlength="2">
+	B:<input name="blue" maxlength="2">
+	&nbsp;<input type="button" onClick="ChangeColor()" value="换颜色" class="btn">
+</form>
+<br>
+<span id="text">CSS层样式</span>
+</body>
+</html>

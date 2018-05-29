@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Ajax入门</title>
+<style type="text/css">
+<!--
+body{
+	font-size:13px;
+	background-color:#e7f3ff;
+}
+form{
+	padding:0px; margin:0px;
+}
+input{
+	border-bottom:1px solid #007eff;	/* 下划线 */
+	font-family:Arial, Helvetica, sans-serif;
+	color:#007eff;
+	background:transparent;
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+p{
+	margin:0px;
+	padding:2px 2px 2px 10px;
+	background:url(icon.gif) no-repeat 0px 10px;	/* 加入小icon图标 */
+}
+-->
+</style>
+<script language="javascript">
+var xmlHttp;
+function createXMLHttpRequest(){
+	if(window.ActiveXObject){
+		xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	else if(window.XMLHttpRequest){
+		xmlHttp = new XMLHttpRequest();
+	}
+}
+//创建XMLHttpRequest对象
+createXMLHttpRequest();
+function callServer(){
+	//获取表单中的数据
+	var city = document.getElementById("city").value;
+	var state = document.getElementById("state").value;
+	//如果没有填写则返回
+	if ((city == null) || (city == "")) return;
+	if ((state == null) || (state == "")) return;
+	//链接服务器，自动获得代号。本例没有链接服务器，只是示例
+	var url = "getZipCode.php?city=" + escape(city) + "&state=" + escape(state);
+	//打开链接
+	xmlHttp.open("GET", url, true);
+	//告诉服务器在运行完成后（可能要用五分钟或者五个小时）做什么，这里触发updatePage函数
+	xmlHttp.onreadystatechange = updatePage;
+	//发送请求
+	xmlHttp.send(null);
+}
+//处理服务器响应
+function updatePage(){
+	if (xmlHttp.readyState == 4) {
+	var response = xmlHttp.responseText;
+	document.getElementById("zipCode").value = response;
+	}
+}
+</script>
+   </head>
+<body>
+<form>
+	<p>城市: <input type="text" name="city" id="city" size="25" onChange="callServer();"></p>
+	<p>国家: <input type="text" name="state" id="state" size="25" onChange="callServer();"></p>
+	<p>代号: <input type="text" name="zipCode" id="city" size="5"></p>
+</form>
+</body>
+</html>

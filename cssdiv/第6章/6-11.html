@@ -1,0 +1,108 @@
+<html>
+<head>
+<title>直接输入的Excel表格</title>
+<style>
+<!--
+table.formdata{
+	border:1px solid #5F6F7E;
+	border-collapse:collapse;
+	font-family:Arial;
+}
+table.formdata caption{
+	text-align:left;
+	padding-bottom:6px;
+}
+table.formdata th{
+	border:1px solid #5F6F7E;
+	background-color:#E2E2E2;
+	color:#000000px;
+	text-align:left;
+	font-weight:normal;
+	padding:2px 8px 2px 6px;
+	margin:0px;
+}
+table.formdata td{
+	margin:0px;
+	padding:0px;
+	border:1px solid #ABABAB;	/* 单元格边框 */
+}
+table.formdata input{
+	width:100px;
+	padding:1px 3px 1px 3px;
+	margin:0px;
+	border:none;				/* 输入框不要边框 */
+	font-family:Arial;
+}
+.btn{
+	border:1px solid #0083f2;
+	font-family:Arial;
+}
+-->
+</style>
+   </head>
+<body>
+<form method="post">
+<table class="formdata">
+<caption>公司销售统计表 2004～2007</caption>
+<tr>
+<th></th>
+<th scope="col">2004</th>
+<th scope="col">2005</th>
+<th scope="col">2006</th>
+<th scope="col">2007</th>
+</tr>
+<tr>
+<th scope="row">硬盘(Hard Disk)</th>
+	<td><input type="text" name="harddisk2004" id="harddisk2004"></td>
+	<td><input type="text" name="harddisk2005" id="harddisk2005"></td>
+	<td><input type="text" name="harddisk2006" id="harddisk2006"></td>
+	<td><input type="text" name="harddisk2007" id="harddisk2007"></td>
+</tr>
+<tr>
+	<th scope="row">主板(Mainboard)</th>
+	<td><input type="text" name="mainboard2004" id="mainboard2004"></td>
+	<td><input type="text" name="mainboard2005" id="mainboard2005"></td>
+	<td><input type="text" name="mainboard2006" id="mainboard2006"></td>
+	<td><input type="text" name="mainboard2007" id="mainboard2007"></td>
+</tr>
+<tr>
+	<th scope="row">内存条(Memory Disk)</th>
+	<td><input type="text" name="memory2004" id="memory2004"></td>
+	<td><input type="text" name="memory2005" id="memory2005"></td>
+	<td><input type="text" name="memory2006" id="memory2006"></td>
+	<td><input type="text" name="memory2007" id="memory2007"></td>
+</tr>
+<tr>
+	<th scope="row">机箱(Case)</th>
+	<td><input type="text" name="case2004" id="case2004"></td>
+	<td><input type="text" name="case2005" id="case2005"></td>
+	<td><input type="text" name="case2006" id="case2006"></td>
+	<td><input type="text" name="case2007" id="case2007"></td>
+</tr>
+<tr>
+<th scope="row">电源(Power)</th>
+	<td><input type="text" name="power2004" id="power2004"></td>
+	<td><input type="text" name="power2005" id="power2005"></td>
+	<td><input type="text" name="power2006" id="power2006"></td>
+	<td><input type="text" name="power2007" id="power2007"></td>
+</tr>
+<tr>
+	<th scope="row">CPU风扇(CPU Fan)</th>
+	<td><input type="text" name="cpufan2004" id="cpufan2004"></td>
+	<td><input type="text" name="cpufan2005" id="cpufan2005"></td>
+	<td><input type="text" name="cpufan2006" id="cpufan2006"></td>
+	<td><input type="text" name="cpufan2007" id="cpufan2007"></td>
+</tr>
+<tr>
+<th scope="row">总计(Total)</th>
+	<td><input type="text" name="total2004" id="total2004"></td>
+	<td><input type="text" name="total2005" id="total2005"></td>
+	<td><input type="text" name="total2006" id="total2006"></td>
+	<td><input type="text" name="total2007" id="total2007"></td>
+</tr>
+</table>
+<p><input type="submit" name="btnSubmit" id="btnSubmit" value="Add Data" class="btn">
+<input type="reset" value="Reset All" class="btn"></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!DOCTYPE 长辈[
+	<!ELEMENT 长辈 (父亲,母亲)>
+	<!ELEMENT 父亲 (#PCDATA)>
+	<!ELEMENT 母亲 (#PCDATA)>
+	<!ATTLIST 母亲 年龄 CDATA #REQUIRED>
+]>
+<长辈>
+	<父亲>zeng</父亲>
+	<母亲 年龄="50">chen</母亲>
+</长辈>

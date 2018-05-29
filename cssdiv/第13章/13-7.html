@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>由远到近的文字</title>
+<style type="text/css">
+<!--
+div{
+	font-family:Arial;
+	position:absolute;
+}
+-->
+</style>
+   </head>
+<body>
+<script language="javascript">
+for(var i=0;i<128;i++){
+	//不断的变化位置、文字大小、颜色的CSS属性
+	document.write('<div style="left:'+(200-i)+'px;top:'+(10+i/2)+'px; font-size:'+(i*2)+'px; color:rgb('+(256-i)+','+(256-i*2)+','+(i*2)+');">CSS</div>');
+}
+</script>
+<!-- 再输出最后一个位置上的文字，但换颜色 -->
+<div style="left:72px;top:74px; font-size:256px; color:#FFFF44;">CSS</div>
+</body>
+</html>

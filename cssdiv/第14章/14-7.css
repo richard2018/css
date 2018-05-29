@@ -1,0 +1,33 @@
+poem{
+	margin:0px;
+	background:url(poem.jpg) no-repeat;	/*添加背景图片 */
+	width:360px;
+	height:490px;
+	position:absolute;	/* 绝对定位 */
+	left:0px; top:0px;
+}
+title{
+	font-size:19px;
+	color:#FFFF00;
+	position:absolute;
+	left:62px;
+	top:150px;
+}
+author{
+	font-size:12px;
+	color:#4f2b00;
+	position:absolute;
+	left:100px;
+	top:176px;
+}
+verse{
+	position:absolute;	/* 绝对定位 */
+	color:#FFFFFF;
+	font-size:14px;
+	left:55px;
+	top:200px;
+	line-height:20px;	/* 行间距 */
+}
+br{
+	display:block;		/* 让诗句分行显示 */
+}

@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>for语句</title>
+   </head>
+<body>
+<script language="javascript">
+for(var i=0;i<256;i++){
+	j = 255-i;	//j值递减
+	document.write("<font style='color:rgb("+j+","+i+","+i+");'><b>*</b> <font>");
+	//调整*号颜色
+	if(i%16==15){
+		document.write("<br>");		//每输出16个则换行
+	}
+}
+</script>
+</body>
+</html>

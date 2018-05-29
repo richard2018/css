@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>探照灯</title>
+<style type="text/css">
+<!--
+body{
+	background-color:#000000;
+}
+div{
+	filter:light;
+	width:300px;		/* 这句必须得有 */
+}
+-->
+</style>
+   </head>
+<body>
+<script language="javascript">
+function MouseMove(){
+	//移动点光源
+	point.filters[0].MoveLight(0,window.event.x-10,window.event.y-20,70,1);
+}
+</script>
+<div onmousemove="javascript:MouseMove()" id="point">
+<img src="building.jpg">
+</div>
+<script language="javascript">
+	//添加点光源
+	point.filters.light(0).addPoint(0,0,70,240,240,0,100);
+	//point.filters.light(0).addPoint(0,0,100,0,150,255,100);
+</script>
+</body>

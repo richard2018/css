@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>跑马灯</title>
+<style type="text/css">
+<!--
+body{
+	background-color:#000000;	/* 页面背景色 */
+}
+input{
+	background:transparent;		/* 输入框背景透明 */
+	border:none;				/* 无边框 */
+	color:#ffb400;
+	font-size:45px;
+	font-weight:bold;
+	font-family:黑体;
+}
+-->
+</style>
+<script language="javascript">
+var msg="这是跑马灯，我跑啊跑啊跑";		//跑马灯的文字
+var interval = 400;						//跑动的速度
+var seq=0;
+
+function LenScroll() {
+	document.nextForm.lenText.value = msg.substring(seq, msg.length) + "   " + msg;
+	seq++;
+	if ( seq > msg.length )
+		seq = 0;
+	window.setTimeout("LenScroll();", interval);
+}
+</script>
+   </head>
+<body onLoad="LenScroll()">
+<center>
+<form name="nextForm">
+<input type="text" name="lenText">
+</form>
+</center> 
+</body>

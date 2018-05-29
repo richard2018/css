@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>鼠标变幻超链接</title>
+<style>
+<!--
+body{
+	padding:0px;
+	margin:0px;
+	background-color:#efe5e2;
+}
+table.banner{
+	background:url(banner2_bg.jpg) repeat-x;
+	width:100%;
+}
+table.links{
+	background:url(button3_bg.jpg) repeat-x;
+	font-size:12px;
+	width:100%
+}
+a{
+	width:80px; height:32px;
+	padding-top:10px;
+	text-decoration:none;
+	text-align:center;
+	background:url(button3.jpg) no-repeat;	/* 超链接背景图片 */
+}
+a:link, a visited{color:#2d2d26;}
+a:hover{
+	color:#FFFFFF;
+	text-decoration:none;
+	background:url(button4.jpg) no-repeat;	/* 变换背景图片 */
+}
+a.help:hover{								/* “帮助”按钮的样式 */
+	cursor:help;							/* 变幻鼠标形状 */
+}
+-->
+</style>
+   </head>
+<body>
+<table cellpadding="0" cellspacing="0" class="banner">
+	<tr><td><img src="banner2_left.jpg" border="0"></td></tr>
+</table>
+<table cellpadding="0" cellspacing="0" class="links">
+	<tr><td><a href="#">首页导读</a><a href="#">推荐版面</a><a href="#">推荐文章</a><a href="#">收藏夹</a><a href="#">我的信箱</a><a href="#">休闲娱乐</a><a href="#" class="help">帮助</a></td></tr>
+</table>
+</body>
+</html>

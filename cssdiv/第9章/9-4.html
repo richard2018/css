@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>alpha滤镜</title>
+<style>
+<!--
+body{
+	background:url(bg1.jpg);
+	margin:10px;
+}
+.alpha1{
+	filter:alpha(opacity=100,finishopacity=0,style=3);
+	/* 矩形渐变，中间不透明，四周透明 */
+}
+.alpha2{
+	filter:alpha(opacity=0,finishopacity=100,style=3);
+	/* 反之 */
+}
+-->
+</style>
+   </head>
+<body>
+<center>
+<img src="strawberry.jpg">
+<img src="strawberry.jpg" class="alpha1">
+<img src="strawberry.jpg" class="alpha2">
+</center>
+</body>
+</html>

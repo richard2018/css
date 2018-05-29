@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>CSS µœ÷PPTª√µ∆∆¨</title>
+<style type="text/css">
+<!--
+body{
+	background:#000000;
+}
+img{
+	filter:RevealTrans(Duration=3,Transition=23);
+	border:none;
+}
+-->
+</style>
+   </head>
+<body>
+<script language="javascript">
+function img2(x){this.length=x;}
+	jname=new img2(5);
+	jname[0]="photo/06.jpg";
+	jname[1]="photo/07.jpg";
+	jname[2]="photo/08.jpg";
+	jname[3]="photo/09.jpg";
+	jname[4]="photo/10.jpg";
+	var j=0;
+function play2(){
+	if (j==4){ j=0; }
+	else{ j++; }
+	tp2.filters[0].apply();
+	tp2.src=jname[j];
+	tp2.filters[0].play();
+	mytimeout=setTimeout("play2()",4000);
+}
+</script>
+<p><img src="photo/06.jpg" border="0" name="tp2"></p>
+<script language="javascript">play2();</script>
+</body>

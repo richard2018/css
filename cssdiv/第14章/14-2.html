@@ -1,0 +1,29 @@
+<html>
+<head>
+<style type="text/css">
+<!--
+p{
+	font-family:Arial;
+	font-size:15px;
+}
+-->
+</style>
+<script language="javascript" event="onload" for="window">
+	var xmlDoc = new ActiveXObject("Microsoft.XMLDOM");
+	xmlDoc.async="false";
+	xmlDoc.load("14-2.xml");	//调用数据
+	var nodes = xmlDoc.documentElement.childNodes;   
+	title.innerText = nodes.item(0).text; 
+	author.innerText = nodes.item(1).text;
+	email.innerText = nodes.item(2).text;
+	date.innerText = nodes.item(3).text;
+</script>
+<title>在HTML中调用XML数据</title>
+   </head>
+<body>
+	<p><b>标题:</b> <span id="title"></span></p>
+	<p><b>作者:</b> <span id="author"></span></p>
+	<p><b>信箱:</b> <span id="email"></span></p>
+	<p><b>日期:</b> <span id="date"></span></p>
+</body>
+</html>

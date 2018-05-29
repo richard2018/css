@@ -1,0 +1,44 @@
+body{
+	margin:0.8em;
+	padding:0px;
+}
+div.pic{
+	float:left;						/* 向左浮动 */
+	height:160px; width:160px;		/* 每幅图片块的大小 */
+	margin:6px;
+	padding:0px;
+}
+div.pic img{
+	border:1px solid #82c3ff;
+}
+div.ls{
+	background:url(framels.jpg) no-repeat center;	/* 水平图片的背景 */
+}
+div.pt{
+	background:url(framept.jpg) no-repeat center;	/* 竖直图片的背景 */
+}
+div.ls img{											/* 水平图片 */
+	margin:0px;
+	height:90px; width:135px;
+}
+div.pt img{											/* 竖直图片 */
+	margin:0px;
+	height:135px; width:90px;
+}
+div.pic ul{
+	display:none;					/* 幻灯片模式，不显式图片信息 */
+}
+div.ls a{
+	display:block;					/* 定义为块元素 */
+	padding:34px 14px 36px 11px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.pt a{
+	display:block;
+	padding:11px 36px 14px 34px;	/* 将超链接区域扩大到整个背景块 */
+}
+div.ls a:hover{						/* 鼠标经过时修改背景图片 */
+	background:url(framels_hover.jpg) no-repeat center;
+}
+div.pt a:hover{
+	background:url(framept_hover.jpg) no-repeat center;
+}

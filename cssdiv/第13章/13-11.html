@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>灯光效果</title>
+<style type="text/css">
+<!--
+img.light{
+	filter:light;
+	border:none;
+}
+-->
+</style>
+   </head>
+<body>
+<script language="javascript">
+// 调用设置光源函数
+window.onload=setlights1;
+// 调用Light滤镜方法
+function setlights1(){
+	var iX2=lightsy.offsetWidth;		//获得图片宽度
+	var iY2=lightsy.offsetHeight;		//获得图片高度
+	lightsy.filters[0].addCone(0,0,5,iX2,iY2,60,130,255,50,20);
+	lightsy.filters[0].addCone(0,iY2,5,iX2,0,60,130,255,50,20);
+	//lightsy.filters[0].addcone(430,120,10,100,100,255,255,0,70,55); 
+}
+</script>
+<img src="fish.jpg">&nbsp;&nbsp;
+<img id="lightsy" src="fish.jpg" class="light">
+</body>
