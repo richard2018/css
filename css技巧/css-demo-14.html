@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <title>标签提示框</title>
+    <script type='text/javascript'></script>
+    <style type='text/css'>
+        a.tooltip {
+            position: relative
+        }
+
+        a.tooltip span {
+            display: none;
+            padding: 5px;
+            width: 200px;
+        }
+
+        a:hover {
+            background: #fff;
+        }
+        /*background-color is a must for IE6*/
+
+        a.tooltip:hover span {
+            display: inline;
+            position: absolute;
+        }
+    </style>
+
+    <head>
+
+        <body>
+            <a class="tooltip" href="#">链接文字 <span>提示文字</span></a>
+        </body>
+
+</html>

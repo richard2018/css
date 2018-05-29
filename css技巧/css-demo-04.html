@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>容器的垂直居中</title>
+    <script type='text/javascript'></script>
+    <style type='text/css'>
+        /* 有一大一小两个容器，请问如何将小容器垂直居中  ，没理解透彻*/
+
+        div#big {
+            position: relative;
+            height: 480px;
+            background-color: goldenrod;
+        }
+
+        div#small {
+            position: absolute;
+            top: 50%;
+            height: 240px;
+            margin-top: -120px;
+            background-color: blue;
+        }
+    </style>
+
+    <head>
+
+        <body>
+            <div id="big">
+                <div id="small">ddd
+                </div>
+            </div>
+        </body>
+
+</html>

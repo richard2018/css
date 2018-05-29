@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>固定位置的页首</title>
+    <script type='text/javascript'></script>
+    <style type='text/css'>
+        body {
+            margin: 0;
+            padding: 100px 0 0 0;
+        }
+
+        div#header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+        }
+
+        @media screen {
+            body>div#header {
+                position: fixed;
+            }
+        }
+        div#container { 
+            background-color: greenyellow;
+            height: 1500px;
+        }
+    </style>
+
+    <head>
+
+        <body>
+            <div id = "header">testHeader</div>
+            <div id="container">ddd</div>
+        </body>
+
+</html>
